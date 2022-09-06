@@ -1,0 +1,28 @@
+{
+  "name": "@greenlabs/rescript-next",
+  "description": "ReScript bindings for Next.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "scripts": {
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps"
+  },
+  "keywords": [
+    "ReScript",
+    "Next",
+    "React"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-next"
+  },
+  "devDependencies": {
+    "@rescript/react": "^0.10.3"
+  }
+}
