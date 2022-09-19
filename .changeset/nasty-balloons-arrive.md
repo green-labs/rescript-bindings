@@ -1,5 +1,5 @@
 ---
-"@greenlabs/rescript-next": patch
+"@greenlabs/rescript-next": minor
 ---
 
 ReScript bindings for Next.js
