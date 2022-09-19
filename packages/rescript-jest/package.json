@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-jest",
   "version": "0.0.0",
-  "description": "ReScript bindings for Next.js",
+  "description": "ReScript bindings for Jest",
   "keywords": [
     "rescript",
     "jest"

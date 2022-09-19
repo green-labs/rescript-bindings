@@ -22,7 +22,9 @@
     "directory": "packages/rescript-nock"
   },
   "peerDependencies": {
-    "nock": "^13.2.9",
+    "nock": "^13.2.9"
+  },
+  "devDependencies": {
     "rescript-webapi": "^0.6.1"
   }
 }
