@@ -70,8 +70,9 @@ module Link = {
 }
 
 module Router = {
-  // Make sure to only register events via a useEffect hook!
-
+  /*
+      Make sure to only register events via a useEffect hook!
+ */
   module Events = {
     type t
 
@@ -121,15 +122,27 @@ module Router = {
     shallow: bool,
   }
 
+  type state = {
+    url: string,
+    @as("as") _as: string,
+    options: options,
+  }
+
   @send external push: (router, string) => unit = "push"
   @send external pushObj: (router, pathObj) => unit = "push"
-  @send external pushWithAs: (router, string, string, ~options: options=?) => unit = "push"
+  @send external pushWithAs: (router, string, option<string>, ~options: options=?) => unit = "push"
 
   @module("next/router") external useRouter: unit => router = "useRouter"
 
   @send external replace: (router, string) => unit = "replace"
   @send external replaceObj: (router, pathObj) => unit = "replace"
-  @send external replaceWithAs: (router, string, string, ~options: options=?) => unit = "replace"
+  @send
+  external replaceWithAs: (router, string, option<string>, ~options: options=?) => unit = "replace"
+
+  @scope("options") @set external setScrollOption: (state, bool) => unit = "scroll"
+
+  @send
+  external beforePopState: (router, state => bool) => unit = "beforePopState"
 }
 
 module Head = {
