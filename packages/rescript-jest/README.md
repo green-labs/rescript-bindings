@@ -35,16 +35,16 @@ describe("Test my module", () => {
     })
 
     test("myFunction is should called", () => {
-      expect(myMockFunction).toBeCalled()
-      expect(myMockFunction).toBeCalledTimes(1)
+      expect(myMockFunction)->toBeCalled()
+      expect(myMockFunction)->toBeCalledTimes(1)
     })
 
     test("myFunction is should called with 'Hello ', 'world!'", () => {
-      expect(myMockFunction).toBeCalledWith(("Hello ", "world!"))
+      expect(myMockFunction)->toBeCalledWith(("Hello ", "world!"))
     })
 
     test("myFunction return is 'Hello world!'", () => {
-      expect(myMockFunction).toReturnedWith("Hello world!")
+      expect(myMockFunction)->toReturnedWith("Hello world!")
     })
   })
   
