@@ -1,0 +1,28 @@
+{
+  "name": "@greenlabs/rescript-nock",
+  "description": "ReScript bindings for Nock",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "scripts": {
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps"
+  },
+  "keywords": [
+    "ReScript",
+    "Nock"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-nock"
+  },
+  "peerDependencies": {
+    "nock": "^13.2.9",
+    "rescript-webapi": "^0.6.1"
+  }
+}
