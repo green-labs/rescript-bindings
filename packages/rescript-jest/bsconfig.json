@@ -9,7 +9,7 @@
   "suffix": ".bs.js",
   "sources": [
     {
-      "dir": "./lib",
+      "dir": "./src",
       "subdirs": true
     }
   ],
