@@ -1,30 +1,78 @@
+module Req = {
+  type t
+
+  @get
+  external cookies: t => Js.Dict.t<string> = "cookies"
+
+  @get external method: t => string = "method"
+  @get external url: t => string = "url"
+  @get external port: t => int = "port"
+  @get external headers: t => Js.Dict.t<string> = "headers"
+  @get
+  external rawHeaders: t => array<string> = "rawHeaders"
+  @get
+  external rawTrailers: t => array<string> = "rawTrailers"
+  @get external aborted: t => bool = "aborted"
+  @get external complete: t => bool = "complete"
+  @send external destroy: t => unit = "destroy"
+  @send
+  external destroyWithError: (t, Js.Exn.t) => bool = "destroy"
+  @get external statusCode: t => int = "statusCode"
+  @get
+  external statusMessage: t => string = "statusMessage"
+  @get
+  external trailers: t => Js.Dict.t<string> = "trailers"
+}
+
+module Res = {
+  type t
+
+  @get external statusCode: t => int = "statusCode"
+  @set
+  external setStatusCode: (t, int) => unit = "statusCode"
+  @send external end: t => unit = "end"
+  @send
+  external getHeader: (t, string) => option<string> = "getHeader"
+  @send
+  external setHeader: (t, string, string) => unit = "setHeader"
+}
+
 module GetServerSideProps = {
-  module Req = {
-    type t
-  }
+  type result<'a> =
+    | Props('a)
+    | NotFound
+    | Redirect(string)
+    | RedirectPermanent(string)
+    | RedirectStatusCode(string, int)
 
-  module Res = {
-    type t
-
-    @send external setHeader: (t, string, string) => unit = "setHeader"
-    @send external write: (t, string) => unit = "write"
-    @send external end: t => unit = "end"
-  }
-
-  // See: https://github.com/zeit/next.js/blob/canary/packages/next/types/index.d.ts
-  type context<'props, 'params, 'previewData> = {
-    params: 'params,
-    query: Js.Dict.t<string>,
-    preview: option<bool>, // preview is true if the page is in the preview mode and undefined otherwise.
-    previewData: Js.Nullable.t<'previewData>,
+  type context<'params> = {
     req: Req.t,
     res: Res.t,
+    params: 'params,
+    query: Js.Dict.t<string>,
+    resolvedUrl: string,
+    locale: string,
+    locales: array<string>,
+    defaultLocale: string,
   }
 
-  // The definition of a getServerSideProps function
-  type t<'props, 'params, 'previewData> = context<'props, 'params, 'previewData> => Js.Promise.t<{
-    "props": 'props,
-  }>
+  type t<'a, 'b> = context<'b> => Js.Promise.t<result<'a>>
+
+  let parseResult = result =>
+    switch result {
+    | Props(result) => {"props": result}->Obj.magic
+    | NotFound => {"notFound": true}->Obj.magic
+    | Redirect(url) => {"redirect": {"destination": url, "permanent": false}}->Obj.magic
+    | RedirectPermanent(url) => {"redirect": {"destination": url, "permanent": true}}->Obj.magic
+    | RedirectStatusCode(url, statusCode) =>
+      {
+        "redirect": {"destination": url, "statusCode": statusCode},
+      }->Obj.magic
+    }
+
+  let make = (callback: t<'a, 'b>, context: context<'b>) => {
+    callback(context) |> Js.Promise.then_(result => result->parseResult->Js.Promise.resolve)
+  }
 }
 
 module GetStaticProps = {
