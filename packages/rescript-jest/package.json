@@ -1,0 +1,31 @@
+{
+  "name": "@greenlabs/rescript-jest",
+  "version": "0.0.0",
+  "description": "ReScript bindings for Next.js",
+  "keywords": [
+    "rescript",
+    "jest"
+  ],
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "homepage": "https://github.com/green-labs/rescript-bindings#readme",
+  "license": "MIT",
+  "main": "lib/rescript-jest.js",
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-jest"
+  },
+  "scripts": {
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps"
+  },
+  "bugs": {
+    "url": "https://github.com/green-labs/rescript-bindings/issues"
+  },
+  "peerDependencies": {
+    "jest": "^28.1.3"
+  }
+}
