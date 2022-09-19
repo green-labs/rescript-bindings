@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-next",
   "description": "ReScript bindings for Next.js",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
