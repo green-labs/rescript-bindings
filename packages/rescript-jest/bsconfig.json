@@ -17,5 +17,5 @@
   "warnings": {
     "error": true
   },
-  "bs-dependencies": ["@rescript/react"]
+  "bs-dependencies": []
 }

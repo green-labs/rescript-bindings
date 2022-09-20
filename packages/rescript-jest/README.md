@@ -3,9 +3,9 @@
 ## Install
 
 ```bash
-npm i @greenlabs/rescript-jest
+npm i @greenlabs/rescript-jest --dev
 or
-yarn add @greenlabs/rescript-jest
+yarn add @greenlabs/rescript-jest --dev
 ```
 
 ```json

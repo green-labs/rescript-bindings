@@ -9,7 +9,6 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "homepage": "https://github.com/green-labs/rescript-bindings#readme",
   "license": "MIT",
-  "main": "lib/rescript-jest.js",
   "publishConfig": {
     "access": "public"
   },
