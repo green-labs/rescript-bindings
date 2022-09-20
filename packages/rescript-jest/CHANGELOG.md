@@ -1,5 +1,11 @@
 # @greenlabs/rescript-jest
 
+## 0.1.1
+
+### Patch Changes
+
+- 00eaec4: improve package using (jest, nock)
+
 ## 0.1.0
 
 ### Minor Changes
