@@ -1,0 +1,43 @@
+{
+  "name": "@greenlabs/rescript-testing-library",
+  "description": "ReScript bindings for @testing-library",
+  "version": "0.10.0",
+  "license": "MIT",
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "scripts": {
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps",
+    "clean": "rescript clean -with-deps"
+  },
+  "keywords": [
+    "ReScript",
+    "@testing-library"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-testing-library"
+  },
+  "peerDependencies": {
+    "@greenlabs/rescript-jest": "^0.1.0",
+    "@rescript/react": "^0.10.3",
+    "@testing-library/dom": "^8.18.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.3",
+    "rescript-webapi": "^0.6.1"
+  },
+  "devDependencies": {
+    "@greenlabs/rescript-jest": "^0.1.0",
+    "@rescript/react": "^0.10.3",
+    "@testing-library/dom": "^8.18.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "rescript-webapi": "^0.6.1"
+  }
+}
