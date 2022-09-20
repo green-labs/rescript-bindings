@@ -235,7 +235,7 @@ module Expect = {
   @send external toContain: (t<array<'a>>, 'a) => unit = "toContain"
   @send external toContainEqual: (t<array<'a>>, 'a) => unit = "toContainEqual"
 
-  @send external toHaveLength: t<array<'a>> => unit = "toHaveLength"
+  @send external toHaveLength: (t<array<'a>>, int) => unit = "toHaveLength"
   @send external toHaveProperty: (t<'a>, string) => unit = "toHaveProperty"
   @send external toHavePropertyValue: (t<'a>, string, 'b) => unit = "toHaveProperty"
 
