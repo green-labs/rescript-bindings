@@ -79,6 +79,11 @@ external deleteWithRequest: (
 @send external querySearchParams: (t2, Webapi.Url.URLSearchParams.t) => t2 = "query"
 @send external queryAny: (t2, 'a) => t2 = "query"
 
+// delay
+@send external delay: (t2, int) => t2 = "delay"
+@send external delayConnection: (t2, int) => t2 = "delayConnection"
+@send external delayBody: (t2, int) => t2 = "delayBody"
+
 // reply
 @send external reply: (t2, int) => t = "reply"
 @send external replyText: (t2, int, string) => t = "reply"
