@@ -20,7 +20,7 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/green-labs/rescript-korean-numeral/issues"
+    "url": "https://github.com/green-labs/rescript-bindings/issues"
   },
   "homepage": "https://github.com/green-labs/rescript-bindings/rescript-korean-numeral#readme",
   "devDependencies": {
