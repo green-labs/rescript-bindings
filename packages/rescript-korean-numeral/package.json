@@ -3,14 +3,14 @@
   "version": "0.1.2",
   "description": "ReScript module to convert the number to Korean",
   "scripts": {
-    "re:watch": "rescript -w",
-    "re:build": "rescript",
-    "re:clean": "rescript clean",
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps",
+    "clean": "rescript clean",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/green-labs/rescript-bindings/rescript-korean-numeral.git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
     "directory": "packages/rescript-korean-numeral"
   },
   "keywords": [
