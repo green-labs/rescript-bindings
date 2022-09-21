@@ -26,5 +26,8 @@
   "devDependencies": {
     "@glennsl/bs-jest": "^0.6.0",
     "rescript": "^10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
