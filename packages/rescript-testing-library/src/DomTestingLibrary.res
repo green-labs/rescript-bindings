@@ -53,69 +53,69 @@ module ByRole = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByRole"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByRole"
-  @send external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByRole"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByRole"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByRole"
+  @send external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByRole"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByRole"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
-    "findByRole"
-  @send external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByRole"
-  @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByRole"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByRole"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByRole"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByRole"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByRole"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByRole"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByRole"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByRole"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "queryByRole"
-  @send external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByRole"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
     "queryByRole"
+  @send external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByRole"
   @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "queryByRole"
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByRole"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByRole"
   @send
-  external queryFromFunctionWithOption: (
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "queryAllByRole"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByRole"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByRole"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "queryAllByRole"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByRole"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByRole"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByRole"
+  @send external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByRole"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByRole"
+  @send
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByRole"
+  @send
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByRole"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByRole"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByRole"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByRole"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByRole"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByRole"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByRole"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByRole"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByRole"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByRole"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByRole"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByRole"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByRole"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByRole"
 }
 
 module ByLabel = {
@@ -146,69 +146,69 @@ module ByLabel = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByLabel"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByLabel"
-  @send external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByLabel"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByLabel"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByLabel"
+  @send external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByLabel"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByLabel"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
-    "findByLabel"
-  @send external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByLabel"
-  @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByLabel"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByLabel"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByLabel"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByLabel"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByLabel"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByLabel"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByLabel"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByLabel"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "queryByLabel"
-  @send external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByLabel"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
     "queryByLabel"
+  @send external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByLabel"
   @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "queryByLabel"
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByLabel"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByLabel"
   @send
-  external queryFromFunctionWithOption: (
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "queryAllByLabel"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByLabel"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByLabel"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "queryAllByLabel"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByLabel"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByLabel"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByLabel"
+  @send external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByLabel"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByLabel"
+  @send
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByLabel"
+  @send
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByLabel"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByLabel"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByLabel"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByLabel"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByLabel"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByLabel"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByLabel"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByLabel"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByLabel"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByLabel"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByLabel"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByLabel"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByLabel"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByLabel"
 }
 
 module ByPlaceholderText = {
@@ -243,82 +243,81 @@ module ByPlaceholderText = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByPlaceholderText"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByPlaceholderText"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByPlaceholderText"
   @send
-  external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> =
-    "findByPlaceholderText"
+  external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> =
+    "queryByPlaceholderText"
   @send
-  external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByPlaceholderText"
+  external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByPlaceholderText"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
-    "findByPlaceholderText"
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+    "queryByPlaceholderText"
   @send
-  external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> =
-    "findByPlaceholderText"
+  external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> =
+    "queryByPlaceholderText"
   @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByPlaceholderText"
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByPlaceholderText"
 
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByPlaceholderText"
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByPlaceholderText"
   @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> =
-    "findAllByPlaceholderText"
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> =
+    "queryAllByPlaceholderText"
   @send
-  external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByPlaceholderText"
+  external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByPlaceholderText"
   @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByPlaceholderText"
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByPlaceholderText"
   @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> =
-    "findAllByPlaceholderText"
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> =
+    "queryAllByPlaceholderText"
   @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByPlaceholderText"
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByPlaceholderText"
 
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByPlaceholderText"
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByPlaceholderText"
   @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByPlaceholderText"
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByPlaceholderText"
   @send
-  external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByPlaceholderText"
+  external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByPlaceholderText"
   @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByPlaceholderText"
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByPlaceholderText"
   @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByPlaceholderText"
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByPlaceholderText"
   @send
-  external queryFromFunctionWithOption: (
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByPlaceholderText"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByPlaceholderText"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByPlaceholderText"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByPlaceholderText"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByPlaceholderText"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByPlaceholderText"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByPlaceholderText"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByPlaceholderText"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByPlaceholderText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByPlaceholderText"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByPlaceholderText"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByPlaceholderText"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByPlaceholderText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByPlaceholderText"
 }
 
 module ByText = {
@@ -350,69 +349,69 @@ module ByText = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByText"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByText"
-  @send external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByText"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByText"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByText"
+  @send external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByText"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByText"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
-    "findByText"
-  @send external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByText"
-  @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByText"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByText"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByText"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByText"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByText"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByText"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByText"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByText"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "queryByText"
-  @send external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByText"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
     "queryByText"
+  @send external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByText"
   @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "queryByText"
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByText"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByText"
   @send
-  external queryFromFunctionWithOption: (
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "queryAllByText"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByText"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByText"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "queryAllByText"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByText"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByText"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByText"
+  @send external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByText"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByText"
+  @send
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByText"
+  @send
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByText"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByText"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByText"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByText"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByText"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByText"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByText"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByText"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByText"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByText"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByText"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByText"
 }
 
 module ByDisplayValue = {
@@ -446,78 +445,79 @@ module ByDisplayValue = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByDisplayValue"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByDisplayValue"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByDisplayValue"
   @send
-  external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByDisplayValue"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByDisplayValue"
+  external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> =
+    "queryByDisplayValue"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByDisplayValue"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+    "queryByDisplayValue"
+  @send
+  external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> =
+    "queryByDisplayValue"
+  @send
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByDisplayValue"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByDisplayValue"
+  @send
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> =
+    "queryAllByDisplayValue"
+  @send
+  external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByDisplayValue"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByDisplayValue"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> =
+    "queryAllByDisplayValue"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByDisplayValue"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByDisplayValue"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
     "findByDisplayValue"
   @send
-  external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByDisplayValue"
+  external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByDisplayValue"
   @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
     "findByDisplayValue"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByDisplayValue"
   @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> =
-    "findAllByDisplayValue"
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByDisplayValue"
   @send
-  external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByDisplayValue"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByDisplayValue"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> =
-    "findAllByDisplayValue"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByDisplayValue"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByDisplayValue"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByDisplayValue"
-  @send
-  external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByDisplayValue"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByDisplayValue"
-  @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByDisplayValue"
-  @send
-  external queryFromFunctionWithOption: (
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByDisplayValue"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByDisplayValue"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByDisplayValue"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByDisplayValue"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByDisplayValue"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByDisplayValue"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByDisplayValue"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByDisplayValue"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByDisplayValue"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByDisplayValue"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByDisplayValue"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByDisplayValue"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByDisplayValue"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByDisplayValue"
 }
 
 module ByAltText = {
@@ -548,74 +548,74 @@ module ByAltText = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByAltText"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByAltText"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByAltText"
   @send
-  external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByAltText"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByAltText"
+  external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByAltText"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByAltText"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+    "queryByAltText"
+  @send
+  external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByAltText"
+  @send
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByAltText"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByAltText"
+  @send
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> =
+    "queryAllByAltText"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByAltText"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByAltText"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> =
+    "queryAllByAltText"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByAltText"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByAltText"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByAltText"
+  @send
+  external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByAltText"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
     "findByAltText"
   @send
-  external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByAltText"
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByAltText"
   @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByAltText"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByAltText"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByAltText"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByAltText"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByAltText"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByAltText"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByAltText"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByAltText"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByAltText"
-  @send
-  external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByAltText"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByAltText"
-  @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByAltText"
-  @send
-  external queryFromFunctionWithOption: (
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByAltText"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByAltText"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByAltText"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByAltText"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByAltText"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByAltText"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByAltText"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByAltText"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByAltText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByAltText"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByAltText"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByAltText"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByAltText"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByAltText"
 }
 
 module ByTitle = {
@@ -645,69 +645,69 @@ module ByTitle = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByTitle"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByTitle"
-  @send external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByTitle"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByTitle"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByTitle"
+  @send external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByTitle"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByTitle"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
-    "findByTitle"
-  @send external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByTitle"
-  @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByTitle"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByTitle"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByTitle"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByTitle"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByTitle"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByTitle"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByTitle"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTitle"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTitle"
-  @send external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTitle"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
     "queryByTitle"
+  @send external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByTitle"
   @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTitle"
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByTitle"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByTitle"
   @send
-  external queryFromFunctionWithOption: (
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "queryAllByTitle"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByTitle"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByTitle"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "queryAllByTitle"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByTitle"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByTitle"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByTitle"
+  @send external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByTitle"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
+    "findByTitle"
+  @send
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByTitle"
+  @send
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTitle"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByTitle"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTitle"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTitle"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTitle"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTitle"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTitle"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTitle"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTitle"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTitle"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTitle"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTitle"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTitle"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTitle"
 }
 
 module ByTestId = {
@@ -738,71 +738,69 @@ module ByTestId = {
   external getAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
     "getAllByTestId"
 
-  @send external find: (t, string) => option<Dom.HtmlElement.t> = "findByTestId"
+  @send external query: (t, string) => option<Dom.HtmlElement.t> = "queryByTestId"
   @send
-  external findWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "findByTestId"
-  @send external findFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "findByTestId"
+  external queryWithOption: (t, string, options) => option<Dom.HtmlElement.t> = "queryByTestId"
+  @send external queryFromRegex: (t, Js.Re.t) => option<Dom.HtmlElement.t> = "queryByTestId"
   @send
-  external findFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+  external queryFromRegexWithOption: (t, Js.Re.t, options) => option<Dom.HtmlElement.t> =
+    "queryByTestId"
+  @send
+  external queryFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "queryByTestId"
+  @send
+  external queryFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
+    "queryByTestId"
+
+  @send external queryAll: (t, string) => array<Dom.HtmlElement.t> = "queryAllByTestId"
+  @send
+  external queryAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "queryAllByTestId"
+  @send external queryAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "queryAllByTestId"
+  @send
+  external queryAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
+    "queryAllByTestId"
+  @send
+  external queryAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "queryAllByTestId"
+  @send
+  external queryAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
+    "queryAllByTestId"
+
+  @send external find: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "findByTestId"
+  @send
+  external findWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> = "findByTestId"
+  @send external findFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "findByTestId"
+  @send
+  external findFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
     "findByTestId"
   @send
-  external findFromFunction: (t, queryFunction) => option<Dom.HtmlElement.t> = "findByTestId"
+  external findFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> = "findByTestId"
   @send
-  external findFromFunctionWithOption: (t, queryFunction, options) => option<Dom.HtmlElement.t> =
-    "findByTestId"
-
-  @send external findAll: (t, string) => array<Dom.HtmlElement.t> = "findAllByTestId"
-  @send
-  external findAllWithOption: (t, string, options) => array<Dom.HtmlElement.t> = "findAllByTestId"
-  @send external findAllFromRegex: (t, Js.Re.t) => array<Dom.HtmlElement.t> = "findAllByTestId"
-  @send
-  external findAllFromRegexWithOption: (t, Js.Re.t, options) => array<Dom.HtmlElement.t> =
-    "findAllByTestId"
-  @send
-  external findAllFromFunction: (t, queryFunction) => array<Dom.HtmlElement.t> = "findAllByTestId"
-  @send
-  external findAllFromFunctionWithOption: (t, queryFunction, options) => array<Dom.HtmlElement.t> =
-    "findAllByTestId"
-
-  @send external query: (t, string) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTestId"
-  @send
-  external queryWithOption: (t, string, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByTestId"
-  @send external queryFromRegex: (t, Js.Re.t) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTestId"
-  @send
-  external queryFromRegexWithOption: (t, Js.Re.t, options) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByTestId"
-  @send
-  external queryFromFunction: (t, queryFunction) => Js.Promise.t<Dom.HtmlElement.t> =
-    "queryByTestId"
-  @send
-  external queryFromFunctionWithOption: (
+  external findFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<Dom.HtmlElement.t> = "queryByTestId"
+  ) => Js.Promise.t<Dom.HtmlElement.t> = "findByTestId"
 
   @send
-  external queryAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTestId"
+  external findAll: (t, string) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTestId"
   @send
-  external queryAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTestId"
+  external findAllWithOption: (t, string, options) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTestId"
   @send
-  external queryAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTestId"
+  external findAllFromRegex: (t, Js.Re.t) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTestId"
   @send
-  external queryAllFromRegexWithOption: (
+  external findAllFromRegexWithOption: (
     t,
     Js.Re.t,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTestId"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTestId"
   @send
-  external queryAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
-    "queryAllByTestId"
+  external findAllFromFunction: (t, queryFunction) => Js.Promise.t<array<Dom.HtmlElement.t>> =
+    "findAllByTestId"
   @send
-  external queryAllFromFunctionWithOption: (
+  external findAllFromFunctionWithOption: (
     t,
     queryFunction,
     options,
-  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "queryAllByTestId"
+  ) => Js.Promise.t<array<Dom.HtmlElement.t>> = "findAllByTestId"
 }
