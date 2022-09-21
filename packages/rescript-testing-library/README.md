@@ -34,23 +34,18 @@ open! Jest
 open! Expect
 open! TestingLibrary.JestExpect
 open! TestingLibrary.Dom
-open! TestingLibrary.Dom.Queries
 
 module Event = TestingLibrary.Event
 
-testAsync("uses jest-dom", done => {
+testPromise("use jest dom", async () => {
   let userEvent = Event.setup()
 
   TestingLibrary.React.render(<TestComponent />)->ignore
 
-  expect(screen->ByTitle.find("my_title"))->not->toBeInTheDocument
-
-  userEvent->Event.click(screen->ByText.get("Toggle"))
-  ->Promise.thenResolve(_ => {
-    expect(screen->ByTitle.find("my_title"))->toBeInTheDocument
-    done()
+  expect(screen->ByTitle.query("my_title"))->not->toBeInTheDocument
+  await TestingLibrary.React.actPromise(async () => {
+    await (userEvent->Event.click(screen->ByText.get("Toggle")))
   })
-  ->ignore
+  expect(screen->ByTitle.get("my_title")->Some)->toBeInTheDocument
 })
-
 ```

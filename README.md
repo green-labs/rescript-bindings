@@ -8,6 +8,7 @@
 - [@greenlabs/rescript-nock](https://www.npmjs.com/package/@greenlabs/rescript-nock)
 - [@greenlabs/rescript-jest](https://www.npmjs.com/package/@greenlabs/rescript-jest)
 - [@greenlabs/rescript-react-hook-form](https://www.npmjs.com/package/@greenlabs/rescript-react-hook-form)
+- [@greenlabs/rescript-testing-library](https://www.npmjs.com/package/@greenlabs/rescript-testing-library)
 - [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode)
 
 ## Development
