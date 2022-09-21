@@ -1,5 +1,11 @@
 # @greenlabs/rescript-testing-library
 
+## 0.11.0
+
+### Minor Changes
+
+- 6c1ba8c: fix query <-> find from queries
+
 ## 0.10.1
 
 ### Patch Changes
