@@ -1,4 +1,4 @@
-@bs.send external toLocaleString: (int, string) => string = "toLocaleString"
+@send external toLocaleString: (int, string) => string = "toLocaleString"
 
 open Belt
 
