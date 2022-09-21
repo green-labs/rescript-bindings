@@ -1,0 +1,26 @@
+{
+  "name": "@greenlabs/rescript-korean-numeral",
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "refmt": 3,
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest"
+  ]
+}
