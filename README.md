@@ -1,4 +1,5 @@
 # 💞 rescript-bindings
+
 > rescript bindings monorepo
 
 ## List
@@ -7,6 +8,7 @@
 - [@greenlabs/rescript-nock](https://www.npmjs.com/package/@greenlabs/rescript-nock)
 - [@greenlabs/rescript-jest](https://www.npmjs.com/package/@greenlabs/rescript-jest)
 - [@greenlabs/rescript-react-hook-form](https://www.npmjs.com/package/@greenlabs/rescript-react-hook-form)
+- [@greenlabs/rescript-korean-numeral](https://www.npmjs.com/package/@greenlabs/rescript-korean-numeral)
 
 ## Development
 
@@ -45,9 +47,7 @@ example `package.json`
     "start": "rescript build -w",
     "build": "rescript build -with-deps"
   },
-  "keywords": [
-    "ReScript"
-  ],
+  "keywords": ["ReScript"],
   "publishConfig": {
     "access": "public"
   },
@@ -67,6 +67,3 @@ example `package.json`
 ```shell
 yarn changeset add
 ```
-
-
-
