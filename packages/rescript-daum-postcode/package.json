@@ -16,6 +16,9 @@
     "ReScript",
     "Daum Postcode"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "license": "MIT",
   "bugs": "https://github.com/green-labs/rescript-bindings/issues",
