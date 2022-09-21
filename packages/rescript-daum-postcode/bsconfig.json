@@ -1,5 +1,5 @@
 {
-  "name": "@greenlabs/res-daum-postcode",
+  "name": "@greenlabs/rescript-daum-postcode",
   "bsc-flags": [
     "-bs-super-errors"
   ],

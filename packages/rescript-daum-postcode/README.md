@@ -1,26 +1,27 @@
 # 다음 주소 검색 리스크립트 바인딩
 
-`res-daum-postcode`는 [다음 주소 검색](https://postcode.map.daum.net/guide) 자바스크립트 모듈의 리스크립트(ReScript) 바인딩 입니다.
+`rescript-daum-postcode`는 [다음 주소 검색](https://postcode.map.daum.net/guide) 자바스크립트 모듈의 리스크립트(ReScript) 바인딩 입니다.
 
 ## 설치하기
 
 1. 모듈 설치
 
 ```shell
-npm i @greenlabs/res-daum-postcode
+npm i @greenlabs/rescript-daum-postcode
 or
-yarn add @greenlabs/res-daum-postcode
+yarn add @greenlabs/rescript-daum-postcode
 ```
 
 2. `bsconfig.json` 의존성 추가하기
 
 ```json
 "bs-dependencies": [
-  "@greenlabs/res-daum-postcode"
+  "@greenlabs/rescript-daum-postcode"
 ]
 ```
 
 ## 사용방법
+
 ```rescript
 open DaumPostCode
 
