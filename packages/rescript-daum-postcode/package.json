@@ -1,0 +1,26 @@
+{
+  "name": "@greenlabs/rescript-daum-postcode",
+  "version": "0.1.1",
+  "description": "ReScript binding to Daum Postcode",
+  "scripts": {
+    "res:watch": "rescript build -w",
+    "res:build": "rescript",
+    "res:clean": "rescript clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-daum-postcode"
+  },
+  "keywords": [
+    "ReScript",
+    "Daum Postcode"
+  ],
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "license": "MIT",
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "homepage": "https://github.com/green-labs/rescript-bindings/packages/rescript-daum-postcode#readme",
+  "devDependencies": {
+    "rescript": "^10"
+  }
+}
