@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-react-linkify",
   "description": "ReScript bindings for React Linkify",
-  "version": "1.0.0-alpha",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
