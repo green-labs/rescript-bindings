@@ -22,8 +22,5 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "license": "MIT",
   "bugs": "https://github.com/green-labs/rescript-bindings/issues",
-  "homepage": "https://github.com/green-labs/rescript-bindings/tree/main/packages/rescript-daum-postcode",
-  "devDependencies": {
-    "rescript": "^10"
-  }
+  "homepage": "https://github.com/green-labs/rescript-bindings/tree/main/packages/rescript-daum-postcode"
 }
