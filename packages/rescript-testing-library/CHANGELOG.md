@@ -1,5 +1,16 @@
 # @greenlabs/rescript-testing-library
 
+## 1.0.0
+
+### Minor Changes
+
+- 25c175f: fix jest expect type
+
+### Patch Changes
+
+- Updated dependencies [00cfdba]
+  - @greenlabs/rescript-jest@0.2.0
+
 ## 0.11.0
 
 ### Minor Changes

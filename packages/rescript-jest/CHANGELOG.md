@@ -1,5 +1,11 @@
 # @greenlabs/rescript-jest
 
+## 0.2.0
+
+### Minor Changes
+
+- 00cfdba: remove using module (use global), fix Mock.fn, Test.each type
+
 ## 0.1.1
 
 ### Patch Changes
