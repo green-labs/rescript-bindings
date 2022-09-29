@@ -1,6 +1,6 @@
 open Webapi
 
-type t<'r> = Jest.Expect.t<'r>
+type t<'r> = Jest.expect<'r>
 
 @send external toBeDisabled: t<Dom.HtmlElement.t> => unit = "toBeDisabled"
 @send external toBeEnabled: t<Dom.HtmlElement.t> => unit = "toBeEnabled"
