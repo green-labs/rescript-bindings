@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-date-fns",
   "description": "ReScript bindings to date-fns",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "contributors": [
@@ -9,8 +9,7 @@
       "name": "Arnoldas Sidlauskas",
       "email": "arnoldas.sid@gmail.com"
     }
-  ],
-  
+  ],  
   "scripts": {
     "start": "rescript build -w",
     "build": "rescript build -with-deps"
