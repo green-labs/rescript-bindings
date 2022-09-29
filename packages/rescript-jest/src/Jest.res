@@ -50,45 +50,52 @@ module Test = {
   @scope("test")
   external each5: array<('a, 'b, 'c, 'd, 'e)> => each_fn5<'a, 'b, 'c, 'd, 'e> = "each"
 
-  @scope("test")
-  external eachPromise1: (array<'a>, string, 'a => Js.Promise.t<'t>) => unit = "each"
-  @scope("test")
-  external eachPromise2: (array<('a, 'b)>, string, ('a, 'b) => Js.Promise.t<'t>) => unit = "each"
-  @scope("test")
-  external eachPromise3: (array<('a, 'b, 'c)>, string, ('a, 'b, 'c) => Js.Promise.t<'t>) => unit =
-    "each"
-  @scope("test")
-  external eachPromise4: (
-    array<('a, 'b, 'c, 'd)>,
+  type each_promise_fn1<'a> = (string, @uncurry ('a => Js.Promise.t<unit>)) => unit
+  type each_promise_fn2<'a, 'b> = (string, @uncurry ('a, 'b) => Js.Promise.t<unit>) => unit
+  type each_promise_fn3<'a, 'b, 'c> = (string, @uncurry ('a, 'b, 'c) => Js.Promise.t<unit>) => unit
+  type each_promise_fn4<'a, 'b, 'c, 'd> = (
     string,
-    ('a, 'b, 'c, 'd) => Js.Promise.t<'t>,
-  ) => unit = "each"
-  @scope("test")
-  external eachPromise5: (
-    array<('a, 'b, 'c, 'd, 'e)>,
+    @uncurry ('a, 'b, 'c, 'd) => Js.Promise.t<unit>,
+  ) => unit
+  type each_promise_fn5<'a, 'b, 'c, 'd, 'e> = (
     string,
-    ('a, 'b, 'c, 'd, 'e) => Js.Promise.t<'t>,
-  ) => unit = "each"
+    @uncurry ('a, 'b, 'c, 'd, 'e) => Js.Promise.t<unit>,
+  ) => unit
 
   @scope("test")
-  external eachAsync1: (array<'a>, string, ('a, finishFn) => unit) => unit = "each"
+  external eachPromise1: array<'a> => each_promise_fn1<'a> = "each"
   @scope("test")
-  external eachAsync2: (array<('a, 'b)>, string, ('a, 'b, finishFn) => unit) => unit = "each"
+  external eachPromise2: array<('a, 'b)> => each_promise_fn2<'a, 'b> = "each"
   @scope("test")
-  external eachAsync3: (array<('a, 'b, 'c)>, string, ('a, 'b, 'c, finishFn) => unit) => unit =
+  external eachPromise3: array<('a, 'b, 'c)> => each_promise_fn3<'a, 'b, 'c> = "each"
+  @scope("test")
+  external eachPromise4: array<('a, 'b, 'c, 'd)> => each_promise_fn4<'a, 'b, 'c, 'd> = "each"
+  @scope("test")
+  external eachPromise5: array<('a, 'b, 'c, 'd, 'e)> => each_promise_fn5<'a, 'b, 'c, 'd, 'e> =
     "each"
-  @scope("test")
-  external eachAsync4: (
-    array<('a, 'b, 'c, 'd)>,
+
+  type each_async_fn1<'a> = (string, @uncurry ('a, finishFn) => unit) => unit
+  type each_async_fn2<'a, 'b> = (string, @uncurry ('a, 'b, finishFn) => unit) => unit
+  type each_async_fn3<'a, 'b, 'c> = (string, @uncurry ('a, 'b, 'c, finishFn) => unit) => unit
+  type each_async_fn4<'a, 'b, 'c, 'd> = (
     string,
-    ('a, 'b, 'c, 'd, finishFn) => unit,
-  ) => unit = "each"
-  @scope("test")
-  external eachAsync5: (
-    array<('a, 'b, 'c, 'd, 'e)>,
+    @uncurry ('a, 'b, 'c, 'd, finishFn) => unit,
+  ) => unit
+  type each_async_fn5<'a, 'b, 'c, 'd, 'e> = (
     string,
-    ('a, 'b, 'c, 'd, 'e, finishFn) => unit,
-  ) => unit = "each"
+    @uncurry ('a, 'b, 'c, 'd, 'e, finishFn) => unit,
+  ) => unit
+
+  @scope("test")
+  external eachAsync1: array<'a> => each_async_fn1<'a> = "each"
+  @scope("test")
+  external eachAsync2: array<('a, 'b)> => each_async_fn2<'a, 'b> = "each"
+  @scope("test")
+  external eachAsync3: array<('a, 'b, 'c)> => each_async_fn3<'a, 'b, 'c> = "each"
+  @scope("test")
+  external eachAsync4: array<('a, 'b, 'c, 'd)> => each_async_fn4<'a, 'b, 'c, 'd> = "each"
+  @scope("test")
+  external eachAsync5: array<('a, 'b, 'c, 'd, 'e)> => each_async_fn5<'a, 'b, 'c, 'd, 'e> = "each"
 }
 
 external beforeEach: (@uncurry (unit => unit)) => unit = "beforeEach"
