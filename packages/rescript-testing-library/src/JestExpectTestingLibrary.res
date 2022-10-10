@@ -1,70 +1,146 @@
 open Webapi
 
-type t<'r> = Jest.expect<'r>
+// type Jest.expect<'value, 'return, 'expect_ret> = Jest.expecJest.expect<'value, 'return, 'expect_ret>
 
-@send external toBeDisabled: t<Dom.HtmlElement.t> => unit = "toBeDisabled"
-@send external toBeEnabled: t<Dom.HtmlElement.t> => unit = "toBeEnabled"
-@send external toBeEmptyDOMElement: t<Dom.HtmlElement.t> => unit = "toBeEmptyDOMElement"
-@send external toBeInTheDocument: t<option<Dom.HtmlElement.t>> => unit = "toBeInTheDocument"
-@send external toBeInvalid: t<Dom.HtmlElement.t> => unit = "toBeInvalid"
-@send external toBeRequired: t<Dom.HtmlElement.t> => unit = "toBeRequired"
-@send external toBeValid: t<Dom.HtmlElement.t> => unit = "toBeValid"
-@send external toBeVisible: t<Dom.HtmlElement.t> => unit = "toBeVisible"
 @send
-external toContainElement: (t<Dom.HtmlElement.t>, option<Dom.HtmlElement.t>) => unit =
-  "toContainElement"
-@send external toContainHTML: (t<Dom.HtmlElement.t>, string) => unit = "toContainHTML"
+external toBeDisabled: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeDisabled"
 @send
-external toHaveAccessibleDescription: (t<Dom.HtmlElement.t>, string) => unit =
-  "toHaveAccessibleDescription"
+external toBeEnabled: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeEnabled"
 @send
-external toHaveAccessibleDescriptionRegex: (t<Dom.HtmlElement.t>, Js.Re.t) => unit =
-  "toHaveAccessibleDescription"
-@send external toHaveAccessibleName: (t<Dom.HtmlElement.t>, string) => unit = "toHaveAccessibleName"
+external toBeEmptyDOMElement: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret =
+  "toBeEmptyDOMElement"
 @send
-external toHaveAccessibleNameRegex: (t<Dom.HtmlElement.t>, Js.Re.t) => unit = "toHaveAccessibleName"
-@send external toHaveAttribute: (t<Dom.HtmlElement.t>, string, 'value) => unit = "toHaveAttribute"
-@send external toHaveClass: (t<Dom.HtmlElement.t>, string) => unit = "toHaveClass"
+external toBeInTheDocument: Jest.expect<option<Dom.HtmlElement.t>, 'expect_ret> => 'expect_ret =
+  "toBeInTheDocument"
 @send
-external toHaveClassExact: (t<Dom.HtmlElement.t>, string, @as("json`{ exact: true }`") _) => unit =
+external toBeInvalid: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeInvalid"
+@send
+external toBeRequired: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeRequired"
+@send external toBeValid: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeValid"
+@send
+external toBeVisible: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeVisible"
+@send
+external toContainElement: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  option<Dom.HtmlElement.t>,
+) => 'expect_ret = "toContainElement"
+@send
+external toContainHTML: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
+  "toContainHTML"
+@send
+external toHaveAccessibleDescription: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  string,
+) => 'expect_ret = "toHaveAccessibleDescription"
+@send
+external toHaveAccessibleDescriptionRegex: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  Js.Re.t,
+) => 'expect_ret = "toHaveAccessibleDescription"
+@send
+external toHaveAccessibleName: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  string,
+) => 'expect_ret = "toHaveAccessibleName"
+@send
+external toHaveAccessibleNameRegex: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  Js.Re.t,
+) => 'expect_ret = "toHaveAccessibleName"
+@send
+external toHaveAttribute: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  string,
+  'value,
+) => 'expect_ret = "toHaveAttribute"
+@send
+external toHaveClass: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
   "toHaveClass"
-@send external toHaveFocus: t<Dom.HtmlElement.t> => unit = "toHaveFocus"
-@send external toHaveFormValues: (t<Dom.HtmlElement.t>, 'formValues) => unit = "toHaveFormValues"
-@send external toHaveStyle: (t<Dom.HtmlElement.t>, string) => unit = "toHaveStyle"
-@send external toHaveStyleObject: (t<Dom.HtmlElement.t>, 'styleObject) => unit = "toHaveStyle"
-@send external toHaveTextContent: (t<Dom.HtmlElement.t>, string) => unit = "toHaveTextContent"
+@send
+external toHaveClassExact: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  string,
+  @as("json`{ exact: true }`") _,
+) => 'expect_ret = "toHaveClass"
+@send
+external toHaveFocus: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toHaveFocus"
+@send
+external toHaveFormValues: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  'formValues,
+) => 'expect_ret = "toHaveFormValues"
+@send
+external toHaveStyle: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
+  "toHaveStyle"
+@send
+external toHaveStyleObject: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  'styleObject,
+) => 'expect_ret = "toHaveStyle"
+@send
+external toHaveTextContent: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
+  "toHaveTextContent"
 @send
 external toHaveTextContentNormalizeWhitespace: (
-  t<Dom.HtmlElement.t>,
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
   string,
   @as("json`{ normalizeWhitespace: true }`") _,
-) => unit = "toHaveTextContent"
-@send external toHaveTextContentRegex: (t<Dom.HtmlElement.t>, Js.Re.t) => unit = "toHaveTextContent"
+) => 'expect_ret = "toHaveTextContent"
+@send
+external toHaveTextContentRegex: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  Js.Re.t,
+) => 'expect_ret = "toHaveTextContent"
 @send
 external toHaveTextContentRegexNormalizeWhitespace: (
-  t<Dom.HtmlElement.t>,
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
   Js.Re.t,
   @as("json`{ normalizeWhitespace: true }`") _,
-) => unit = "toHaveTextContent"
-@send external toHaveValue: (t<Dom.HtmlElement.t>, string) => unit = "toHaveValue"
-@send external toHaveValueArray: (t<Dom.HtmlElement.t>, array<string>) => unit = "toHaveValue"
-@send external toHaveValueNumber: (t<Dom.HtmlElement.t>, int) => unit = "toHaveValue"
-@send external toHaveDisplayValue: (t<Dom.HtmlElement.t>, string) => unit = "toHaveDisplayValue"
+) => 'expect_ret = "toHaveTextContent"
 @send
-external toHaveDisplayValueArray: (t<Dom.HtmlElement.t>, array<string>) => unit =
+external toHaveValue: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
+  "toHaveValue"
+@send
+external toHaveValueArray: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  array<string>,
+) => 'expect_ret = "toHaveValue"
+@send
+external toHaveValueNumber: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, int) => 'expect_ret =
+  "toHaveValue"
+@send
+external toHaveDisplayValue: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
   "toHaveDisplayValue"
 @send
-external toHaveDisplayValueRegex: (t<Dom.HtmlElement.t>, Js.Re.t) => unit = "toHaveDisplayValue"
+external toHaveDisplayValueArray: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  array<string>,
+) => 'expect_ret = "toHaveDisplayValue"
 @send
-external toHaveDisplayValueRegexArray: (t<Dom.HtmlElement.t>, array<Js.Re.t>) => unit =
-  "toHaveDisplayValue"
+external toHaveDisplayValueRegex: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  Js.Re.t,
+) => 'expect_ret = "toHaveDisplayValue"
+@send
+external toHaveDisplayValueRegexArray: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  array<Js.Re.t>,
+) => 'expect_ret = "toHaveDisplayValue"
 @send
 external toHaveDisplayValueMixedArray: (
-  t<Dom.HtmlElement.t>,
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
   array<@unwrap [#Str(string) | #Regex(Js.Re.t)]>,
-) => unit = "toHaveDisplayValue"
-@send external toBeChecked: t<Dom.HtmlElement.t> => unit = "toBeChecked"
-@send external toBePartiallyChecked: t<Dom.HtmlElement.t> => unit = "toBePartiallyChecked"
-@send external toHaveErrorMessage: (t<Dom.HtmlElement.t>, string) => unit = "toHaveErrorMessage"
+) => 'expect_ret = "toHaveDisplayValue"
 @send
-external toHaveErrorMessageRegex: (t<Dom.HtmlElement.t>, Js.Re.t) => unit = "toHaveErrorMessage"
+external toBeChecked: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret = "toBeChecked"
+@send
+external toBePartiallyChecked: Jest.expect<Dom.HtmlElement.t, 'expect_ret> => 'expect_ret =
+  "toBePartiallyChecked"
+@send
+external toHaveErrorMessage: (Jest.expect<Dom.HtmlElement.t, 'expect_ret>, string) => 'expect_ret =
+  "toHaveErrorMessage"
+@send
+external toHaveErrorMessageRegex: (
+  Jest.expect<Dom.HtmlElement.t, 'expect_ret>,
+  Js.Re.t,
+) => 'expect_ret = "toHaveErrorMessage"
