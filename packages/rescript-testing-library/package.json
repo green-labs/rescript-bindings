@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-testing-library",
   "description": "ReScript bindings for @testing-library",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
@@ -23,7 +23,7 @@
     "directory": "packages/rescript-testing-library"
   },
   "peerDependencies": {
-    "@greenlabs/rescript-jest": "^0.2.0",
+    "@greenlabs/rescript-jest": "^1.0.0",
     "@rescript/react": "^0.10.3",
     "@testing-library/dom": "^8.18.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -32,7 +32,7 @@
     "rescript-webapi": "^0.6.1"
   },
   "devDependencies": {
-    "@greenlabs/rescript-jest": "^0.2.0",
+    "@greenlabs/rescript-jest": "^1.0.0",
     "@rescript/react": "^0.10.3",
     "@testing-library/dom": "^8.18.0",
     "@testing-library/jest-dom": "^5.16.5",
