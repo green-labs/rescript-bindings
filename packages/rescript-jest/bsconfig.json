@@ -1,7 +1,8 @@
-
 {
   "name": "@greenlabs/rescript-jest",
-  "reason": { "react-jsx": 3 },
+  "reason": {
+    "react-jsx": 3
+  },
   "package-specs": {
     "module": "es6",
     "in-source": true
@@ -11,9 +12,16 @@
     {
       "dir": "./src",
       "subdirs": true
+    },
+    {
+      "dir": "./test",
+      "type": "dev",
+      "subdirs": true
     }
   ],
-  "bsc-flags": ["-bs-no-version-header"],
+  "bsc-flags": [
+    "-bs-no-version-header"
+  ],
   "warnings": {
     "error": true
   },
