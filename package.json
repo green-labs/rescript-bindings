@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run build --concurrency 1  # workaround for rescript build corruption",
     "release": "changeset publish",
     "boot": "yarn --frozen-lockfile && yarn bootstrap",
     "bootstrap": "yarn lerna:bootstrap",
