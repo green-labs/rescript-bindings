@@ -1,5 +1,5 @@
 {
-  "name": "@greenlabs/rescript-egjs-hammerjs",
+  "name": "@greenlabs/rescript-hammerjs",
   "description": "ReScript bindings to @egjs/hammerjs",
   "version": "0.0.1",
   "license": "MIT",
@@ -20,7 +20,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/green-labs/rescript-bindings.git",
-    "directory": "packages/rescript-egjs-hammerjs"
+    "directory": "packages/rescript-hammerjs"
   },
   "dependencies": {
     "@egjs/hammerjs": "^2.0.17"

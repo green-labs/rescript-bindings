@@ -1,5 +1,5 @@
 {
-  "name": "rescript-egjs-hammerjs",
+  "name": "rescript-hammerjs",
   "package-specs": {
     "module": "es6",
     "in-source": true

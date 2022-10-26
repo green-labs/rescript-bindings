@@ -1,18 +1,18 @@
-# `rescript-egjs-hammerjs`
+# `rescript-hammerjs`
 
 ReScript binding of [@egjs/hammerjs](https://github.com/naver/hammer.js)
 
 ## Install
 
 ```bash
-npm i @greenlabs/rescript-egjs-hammerjs
+npm i @greenlabs/rescript-hammerjs
 or
-yarn add @greenlabs/rescript-egjs-hammerjs
+yarn add @greenlabs/rescript-hammerjs
 ```
 
 ```json
 "bs-dependencies": [
-  "@greenlabs/rescript-egjs-hammerjs"
+  "@greenlabs/rescript-hammerjs"
 ]
 ```
 
