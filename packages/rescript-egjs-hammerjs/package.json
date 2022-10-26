@@ -1,0 +1,28 @@
+{
+  "name": "@greenlabs/rescript-egjs-hammerjs",
+  "description": "ReScript bindings to @egjs/hammerjs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "scripts": {
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps"
+  },
+  "keywords": [
+    "ReScript",
+    "hammerjs",
+    "@egjs/hammerjs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-egjs-hammerjs"
+  },
+  "dependencies": {
+    "@egjs/hammerjs": "^2.0.17"
+  }
+}
