@@ -14,6 +14,5 @@
   "bsc-flags": ["-bs-no-version-header"],
   "warnings": {
     "error": true
-  },
-  "bs-dependencies": ["rescript-webapi"]
+  }
 }

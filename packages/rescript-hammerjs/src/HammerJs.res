@@ -56,7 +56,6 @@ type position = {
 type pointer = [#touch | #mouse | #pen | #kinect]
 
 module Instance = {
-  open Webapi
   type t
 
   type event = {
@@ -74,8 +73,8 @@ module Instance = {
     scale: float,
     rotation: float,
     center: position,
-    srcEvent: Dom.Event.t,
-    target: Dom.Element.t,
+    srcEvent: Dom.event,
+    target: Dom.element,
     pointerType: pointer,
     eventType: abs_inputEvents,
     isFirst: bool,
