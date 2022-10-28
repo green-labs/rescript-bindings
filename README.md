@@ -11,6 +11,7 @@
 - [@greenlabs/rescript-testing-library](https://www.npmjs.com/package/@greenlabs/rescript-testing-library)
 - [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode)
 - [@greenlabs/rescript-react-linkify](https://www.npmjs.com/package/@greenlabs/rescript-react-linkify)
+- [@greenlabs/rescript-hammerjs](https://www.npmjs.com/package/@greenlabs/rescript-hammerjs)
 
 ## Development
 
