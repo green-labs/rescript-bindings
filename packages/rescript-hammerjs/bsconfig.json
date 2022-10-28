@@ -1,5 +1,5 @@
 {
-  "name": "rescript-hammerjs",
+  "name": "@greenlabs/rescript-hammerjs",
   "package-specs": {
     "module": "es6",
     "in-source": true
