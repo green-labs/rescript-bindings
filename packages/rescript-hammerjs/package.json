@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-hammerjs",
   "description": "ReScript bindings to @egjs/hammerjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
