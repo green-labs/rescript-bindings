@@ -183,7 +183,7 @@ module Make = (
     }
 
     let makeRule = (config: Rules.config<T.t, 'b>) => Rules.Any(config)
-    let makeRuleWithErrorMEssage = (config: Rules.configWithErrorMessage<T.t, 'b>) => Rules.Any(
+    let makeRuleWithErrorMessage = (config: Rules.configWithErrorMessage<T.t, 'b>) => Rules.Any(
       config,
     )
 
