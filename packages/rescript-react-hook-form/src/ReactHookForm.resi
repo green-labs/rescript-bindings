@@ -129,7 +129,7 @@ module Make: (
   {
     type watchOption = {control: control, name: string}
     let makeRule: Rules.config<T.t, 'b> => Rules.t<'a>
-    let makeRuleWithErrorMEssage: Rules.configWithErrorMessage<T.t, 'b> => Rules.t<'a>
+    let makeRuleWithErrorMessage: Rules.configWithErrorMessage<T.t, 'b> => Rules.t<'a>
     let useWatch: t => T.t
     let watch: t => T.t
     let getValue: t => T.t
@@ -187,7 +187,7 @@ module Make: (
   {
     type watchOption = {control: control, name: string}
     let makeRule: Rules.config<array<T.t>, 'b> => Rules.t<'a>
-    let makeRuleWithErrorMEssage: Rules.configWithErrorMessage<array<T.t>, 'b> => Rules.t<'a>
+    let makeRuleWithErrorMessage: Rules.configWithErrorMessage<array<T.t>, 'b> => Rules.t<'a>
     let useWatch: t => array<T.t>
     let watch: t => array<T.t>
     let getValue: t => array<T.t>
