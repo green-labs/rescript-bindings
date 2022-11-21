@@ -1,5 +1,11 @@
 # @greenlabs/rescript-next
 
+## 0.3.1
+
+### Patch Changes
+
+- 7aa77f0: apply .npmignore and correct devDependencies
+
 ## 0.3.0
 
 ### Minor Changes
