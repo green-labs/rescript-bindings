@@ -12,5 +12,7 @@
     "@greenlabs/rescript-react-linkify": "0.0.0",
     "@greenlabs/rescript-testing-library": "2.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "three-yaks-relax"
+  ]
 }

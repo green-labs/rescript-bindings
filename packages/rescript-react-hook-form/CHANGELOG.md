@@ -1,5 +1,11 @@
 # @greenlabs/rescript-react-hook-form
 
+## 0.11.1-next.0
+
+### Patch Changes
+
+- peer dependencies
+
 ## 0.11.0
 
 ### Minor Changes
