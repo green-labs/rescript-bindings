@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-react-hook-form",
   "description": "ReScript bindings for react-hook-form",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
@@ -25,6 +25,7 @@
     "@rescript/react": "^0.10.3"
   },
   "peerDependencies": {
+    "@rescript/react": "^0.10.3",
     "react-hook-form": "^7.31.2"
   }
 }
