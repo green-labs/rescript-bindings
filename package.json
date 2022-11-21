@@ -1,5 +1,5 @@
 {
-  "name": "rescript-bindings",
+  "name": "@greenlabs/rescript-bindings",
   "dependencies": {
     "@changesets/cli": "^2.24.4",
     "lerna": "^5.5.0",
@@ -14,10 +14,14 @@
     "release": "changeset publish",
     "boot": "yarn --frozen-lockfile && yarn bootstrap",
     "bootstrap": "yarn lerna:bootstrap",
-    "lerna:bootstrap": "lerna bootstrap --use-workspaces"
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
+    "add-package": "yarn lerna-templater"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/green-labs/rescript-bindings.git"
+  },
+  "devDependencies": {
+    "lerna-templater": "^1.4.3"
   }
 }

@@ -33,35 +33,7 @@ yarn build
 **Add new package**
 
 ```shell
-cd packages
-mkdir new-package
-yarn init
-```
-
-example `package.json`
-
-```json
-{
-  "name": "@greenlabs/${package-name}",
-  "description": "${description}",
-  "version": "0.0.0",
-  "license": "MIT",
-  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
-  "scripts": {
-    "start": "rescript build -w",
-    "build": "rescript build -with-deps"
-  },
-  "keywords": ["ReScript"],
-  "publishConfig": {
-    "access": "public"
-  },
-  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/green-labs/rescript-bindings.git",
-    "directory": "packages/${package-name}"
-  }
-}
+yarn add-package -n "rescript-${package-name}"
 ```
 
 ## Release
