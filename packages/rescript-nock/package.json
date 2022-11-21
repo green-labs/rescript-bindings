@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-nock",
   "description": "ReScript bindings for Nock",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {

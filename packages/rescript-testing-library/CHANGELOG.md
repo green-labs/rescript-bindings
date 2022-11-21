@@ -1,5 +1,13 @@
 # @greenlabs/rescript-testing-library
 
+## 2.0.1
+
+### Patch Changes
+
+- 7aa77f0: apply .npmignore and correct devDependencies
+- Updated dependencies [7aa77f0]
+  - @greenlabs/rescript-jest@1.0.1
+
 ## 2.0.0
 
 ### Minor Changes

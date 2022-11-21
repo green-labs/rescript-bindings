@@ -1,5 +1,11 @@
 # @greenlabs/rescript-react-hook-form
 
+## 0.11.2
+
+### Patch Changes
+
+- 7aa77f0: apply .npmignore and correct devDependencies
+
 ## 0.11.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @greenlabs/rescript-nock
 
+## 0.1.2
+
+### Patch Changes
+
+- 7aa77f0: apply .npmignore and correct devDependencies
+
 ## 0.1.1
 
 ### Patch Changes
