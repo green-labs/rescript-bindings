@@ -1,5 +1,11 @@
 # @greenlabs/rescript-date-fns
 
+## 1.0.0
+
+### Major Changes
+
+- 10b47a0: Major update @greenlabs/rescript-date-fns with change package name.
+
 ## 0.0.2
 
 ### Patch Changes

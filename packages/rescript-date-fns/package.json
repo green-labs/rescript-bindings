@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-date-fns",
   "description": "ReScript bindings to date-fns",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "contributors": [
