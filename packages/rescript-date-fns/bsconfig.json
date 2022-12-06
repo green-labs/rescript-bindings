@@ -1,5 +1,5 @@
 {
-  "name": "rescript-date-fns",
+  "name": "@greenlabs/rescript-date-fns",
   "package-specs": {
     "module": "es6",
     "in-source": true
