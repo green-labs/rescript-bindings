@@ -3,5 +3,7 @@
   "useNx": true,
   "useWorkspaces": true,
   "version": "independent",
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "packages": ["packages/*"],
+  "scope": "@greenlabs"
 }

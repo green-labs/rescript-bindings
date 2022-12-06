@@ -1,0 +1,25 @@
+{
+  "name": "{{{scope}}}/{{{name}}}",
+  "reason": { "react-jsx": 3 },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "./src",
+      "subdirs": false
+    },
+    {
+      "dir": "./__tests__",
+      "type": "dev",
+      "subdirs": false
+    }
+  ],
+  "bsc-flags": ["-bs-no-version-header"],
+  "warnings": {
+    "error": true
+  },
+  "bs-dependencies": []
+}
