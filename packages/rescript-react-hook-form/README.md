@@ -19,37 +19,38 @@ yarn add @greenlabs/rescript-react-hook-form
 ### Define module
 
 ```rescript
-type input = {
+type rec input = {
   id: string,
   password: string,
-  hobbys: array<hobby>,
-} and hobby = {value: string}
+  hobbies: array<hobby>,
+}
+and hobby = {value: string}
 
-module Form = HookForm.Make({
+module Form = ReactHookForm.Make({
   type t = input
 })
 
 module FormInput = {
-  module Id = Form.Input({
+  module Id = Form.MakeInput({
     type t = string
     let name = "id"
-    let config = HookForm.Rules.make({
+    let config = ReactHookForm.Rules.make({
       required: true,
     })
   })
 
-  module Password = Form.Input({
+  module Password = Form.MakeInput({
     type t = string
     let name = "password"
-    let config = HookForm.Rules.make({
+    let config = ReactHookForm.Rules.make({
       required: true,
     })
   })
 
-  module Hobbies = Form.InputArray({
+  module Hobbies = Form.MakeInputArray({
     type t = hobby
     let name = "hobbies"
-    let config = HookForm.Rules.empty()
+    let config = ReactHookForm.Rules.empty()
   })
 }
 ```
@@ -59,8 +60,12 @@ module FormInput = {
 ```rescript
 @react.component
 let make = () => {
-  let form = Form.use()
-  let hobbies = FormInput.Hobbies.use(form, ())
+  let form = Form.use(
+    ~config={
+      defaultValues: {id: "id", password: "", hobbies: []},
+    },
+  )
+  let hobbies = FormInput.Hobbies.useFieldArray(form, ())
 
   let formState = form->Form.formState
   let isValid = formState.isValid
@@ -80,30 +85,33 @@ let make = () => {
     None
   })
 
-  <form onSubmit={form->Form.handleSubmit(input => {
-    Js.log((input.id, input.password, input.hobbies))
-  })}>
+  <form
+    onSubmit={form->Form.handleSubmit(input => {
+      Js.log((input.id, input.password, input.hobbies))
+      _ => ()
+    })}>
     <label>
-      {form->FormInput.Id.renderWithRegister(<input placeholder="id" type_="text" />)}
+      {form->FormInput.Id.renderWithRegister(<input placeholder="id" type_="text" />, ())}
     </label>
     {form
     ->FormInput.Id.error
-    ->Option.mapWithDefault(React.null, error => {
+    ->Belt.Option.mapWithDefault(React.null, error => {
       <p> {error.message->React.string} </p>
     })}
     <label>
       {form->FormInput.Password.renderWithRegister(
         <input placeholder="password" type_="password" />,
+        (),
       )}
     </label>
     {form
     ->FormInput.Password.error
-    ->Option.mapWithDefault(React.null, error => {
+    ->Belt.Option.mapWithDefault(React.null, error => {
       <p> {error.message->React.string} </p>
     })}
-    {hobbys
+    {hobbies
     ->FormInput.Hobbies.fields
-    ->Array.mapWithIndex((index, field) => {
+    ->Belt.Array.mapWithIndex((index, field) => {
       <div key={field->FormInput.Hobbies.id}>
         {form->FormInput.Hobbies.renderWithIndexRegister(
           index,
@@ -116,9 +124,7 @@ let make = () => {
     })
     ->React.array}
     <button type_="button" onClick={handleAddHubby}> {`Add new hubby`->React.string} </button>
-    <button type_="button" onClick={handleClearPassword}>
-      {`Clear password`->React.string}
-    </button>
+    <button type_="button" onClick={handleClearPassword}> {`Clear password`->React.string} </button>
     <button disabled={!isValid} type_="submit"> {`Ok`->React.string} </button>
   </form>
 }
