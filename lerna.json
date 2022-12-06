@@ -4,6 +4,5 @@
   "useWorkspaces": true,
   "version": "independent",
   "npmClient": "yarn",
-  "packages": ["packages/*"],
-  "scope": "@greenlabs"
+  "packages": ["packages/*"]
 }
