@@ -23,3 +23,18 @@ yarn add @greenlabs/rescript-next
   <title> {`rescript-next`->React.string} </title>
 </Next.Head>
 ```
+
+```rescript
+let default = (req: Next.Api.req, res: Next.Api.res) => {
+  res
+  ->Next.Api.status(200)
+  ->Next.Api.json({
+    "message": {
+      switch req->Next.Api.query->Js.Dict.get("message") {
+      | Some(message) => message
+      | None => "Hello ReScript!"
+      }
+    },
+  })
+}
+```
