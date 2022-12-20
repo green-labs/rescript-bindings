@@ -252,9 +252,9 @@ module Api = {
   @get external body: req => 'a = "body"
   @get external env: req => 'a = "env"
   
-  type res<'a> = {..} as 'a
+  type res<'a>
 
-  @send external json: (res<'a>, 'a) => unit = "json"
+  @send external json: (res<'a>, Js.Json.t) => unit = "json"
   @send external send: (res<'a>, 'a) => unit = "send"
   @send external status: ('res, int) => 'res = "status"
   @send external redirect: ('res, string) => 'res = "redirect"
