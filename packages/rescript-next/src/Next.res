@@ -254,8 +254,8 @@ module Api = {
   
   type res<'a> = {..} as 'a
 
-  @send external json: ('res, {..} as 'res) => unit = "json"
-  @send external send: ('res, {..} as 'res) => unit = "send"
+  @send external json: (res<'a>, 'a) => unit = "json"
+  @send external send: (res<'a>, 'a) => unit = "send"
   @send external status: ('res, int) => 'res = "status"
   @send external redirect: ('res, string) => 'res = "redirect"
   @send external redirectWithStatus: ('res, int, string) => 'res = "redirect"
