@@ -254,10 +254,10 @@ module Api = {
   
   type res<'a>
 
-  @send external json: (res<'a>, Js.Json.t) => unit = "json"
+  @send external json: (res<'a>, 'a) => unit = "json"
   @send external send: (res<'a>, 'a) => unit = "send"
-  @send external status: ('res, int) => 'res = "status"
-  @send external redirect: ('res, string) => 'res = "redirect"
-  @send external redirectWithStatus: ('res, int, string) => 'res = "redirect"
-  @send external revalidate: ('res, string) => 'res = "revalidate"
+  @send external status: (res<'a>, int) => res<'a> = "status"
+  @send external redirect: (res<'a>, string) => res<'a> = "redirect"
+  @send external redirectWithStatus: (res<'a>, int, string) => res<'a> = "redirect"
+  @send external revalidate: (res<'a>, string) => res<'a> = "revalidate"
 }
