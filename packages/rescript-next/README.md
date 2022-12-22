@@ -28,7 +28,7 @@ yarn add @greenlabs/rescript-next
 let default = (req: Next.Api.req, res: Next.Api.res) => {
   res
   ->Next.Api.status(200)
-  ->Next.Api.json({
+  ->Next.Api.send({
     "message": {
       switch req->Next.Api.query->Js.Dict.get("message") {
       | Some(message) => message
