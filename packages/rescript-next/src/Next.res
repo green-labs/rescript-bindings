@@ -260,4 +260,5 @@ module Api = {
   @send external redirect: (res<'a>, string) => res<'a> = "redirect"
   @send external redirectWithStatus: (res<'a>, int, string) => res<'a> = "redirect"
   @send external revalidate: (res<'a>, string) => res<'a> = "revalidate"
+  @send external setHeader: (res<'a>, string, string) => res<'a> = "setHeader"
 }
