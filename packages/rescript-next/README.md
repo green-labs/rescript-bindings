@@ -25,7 +25,9 @@ yarn add @greenlabs/rescript-next
 ```
 
 ```rescript
-let default = (req: Next.Api.req, res: Next.Api.res) => {
+type response = {"message": string}
+
+let default = (req: Next.Api.req, res: Next.Api.res<response>) => {
   res
   ->Next.Api.status(200)
   ->Next.Api.send({
