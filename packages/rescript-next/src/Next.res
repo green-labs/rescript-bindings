@@ -245,11 +245,11 @@ module Api = {
   type method = [#GET | #POST | #PUT | #DELETE | #PATCH]
   
   @get external method: req => method = "method"
-  @get external headers: req => 'a = "headers"
+  @get external headers: req => Js.Dict.t<string> = "headers"
   @get external query: req => Js.Dict.t<string> = "query"
-  @get external cookies: req => 'a = "cookies"
+  @get external cookies: req => Js.Dict.t<string> = "cookies"
   @get external body: req => 'a = "body"
-  @get external env: req => 'a = "env"
+  @get external env: req => Js.Dict.t<string> = "env"
   
   type res<'a>
 
