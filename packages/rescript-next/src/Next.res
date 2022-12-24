@@ -247,7 +247,6 @@ module Api = {
   @get external method: req => method = "method"
   @get external headers: req => 'a = "headers"
   @get external query: req => Js.Dict.t<string> = "query"
-  @get external params: req => 'a = "params"
   @get external cookies: req => 'a = "cookies"
   @get external body: req => 'a = "body"
   @get external env: req => 'a = "env"
