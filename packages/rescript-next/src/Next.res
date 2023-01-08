@@ -243,14 +243,20 @@ module Api = {
   type req
 
   type method = [#GET | #POST | #PUT | #DELETE | #PATCH]
-  
+
+  module Body = {
+    type t
+    external json: t => Js.Json.t = "%identity"
+    external any: t => 'a = "%identity"
+  }
+
   @get external method: req => method = "method"
   @get external headers: req => Js.Dict.t<string> = "headers"
   @get external query: req => Js.Dict.t<string> = "query"
   @get external cookies: req => Js.Dict.t<string> = "cookies"
-  @get external body: req => 'a = "body"
+  @get external body: req => Body.t = "body"
   @get external env: req => Js.Dict.t<string> = "env"
-  
+
   type res<'a>
 
   @send external json: (res<'a>, Js.Json.t) => unit = "json"
