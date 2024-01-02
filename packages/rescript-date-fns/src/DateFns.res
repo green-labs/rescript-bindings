@@ -17,11 +17,11 @@ external closestTo: (Js.Date.t, array<Js.Date.t>) => Js.Date.t = "default"
 
 @module("date-fns/format") external format: (Js.Date.t, string) => string = "default"
 type formatOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
-  firstWeekContainsDate: option<int>,
-  useAdditionalWeekYearTokens: option<bool>,
-  useAdditionalDayOfYearTokens: option<bool>,
+  locale?: locale,
+  weekStartsOn?: int,
+  firstWeekContainsDate?: int,
+  useAdditionalWeekYearTokens?: bool,
+  useAdditionalDayOfYearTokens?: bool,
 }
 @module("date-fns/format")
 external formatOpt: (Js.Date.t, string, formatOptions) => string = "default"
@@ -29,19 +29,19 @@ external formatOpt: (Js.Date.t, string, formatOptions) => string = "default"
 @module("date-fns/formatDistance")
 external formatDistance: (Js.Date.t, Js.Date.t) => string = "default"
 type formatDistanceOptions = {
-  includeSeconds: option<bool>,
-  addSuffix: option<bool>,
-  locale: option<locale>,
+  includeSeconds?: bool,
+  addSuffix?: bool,
+  locale?: locale,
 }
 @module("date-fns/formatDistance")
 external formatDistanceOpt: (Js.Date.t, Js.Date.t, formatDistanceOptions) => string = "default"
 @module("date-fns/formatDistanceStrict")
 external formatDistanceStrict: (Js.Date.t, Js.Date.t) => string = "default"
 type formatDistanceStrictOptions = {
-  addSuffix: option<bool>,
-  unit: option<string>,
-  roundingMethod: option<string>,
-  locale: option<locale>,
+  addSuffix?: bool,
+  unit?: string,
+  roundingMethod?: string,
+  locale?: locale,
 }
 @module("date-fns/formatDistanceStrict")
 external formatDistanceStrictOpt: (Js.Date.t, Js.Date.t, formatDistanceStrictOptions) => string =
@@ -49,9 +49,9 @@ external formatDistanceStrictOpt: (Js.Date.t, Js.Date.t, formatDistanceStrictOpt
 @module("date-fns/formatDistanceToNow")
 external formatDistanceToNow: Js.Date.t => string = "default"
 type formatDistanceToNowOptions = {
-  includeSeconds: option<bool>,
-  addSuffix: option<bool>,
-  locale: option<locale>,
+  includeSeconds?: bool,
+  addSuffix?: bool,
+  locale?: locale,
 }
 @module("date-fns/formatDistanceToNow")
 external formatDistanceToNowOpt: (Js.Date.t, formatDistanceToNowOptions) => string = "default"
@@ -59,8 +59,8 @@ external formatDistanceToNowOpt: (Js.Date.t, formatDistanceToNowOptions) => stri
 @module("date-fns/formatISO")
 external formatISO: Js.Date.t => string = "default"
 type formatISOOptions = {
-  format: option<string>,
-  representation: option<string>,
+  format?: string,
+  representation?: string,
 }
 
 @module("date-fns/formatISO")
@@ -69,15 +69,15 @@ external formatISOOpt: (Js.Date.t, formatISOOptions) => string = "default"
 @module("date-fns/formatISO9075")
 external formatISO9075: Js.Date.t => string = "default"
 type formatISO9075Options = {
-  format: option<string>,
-  representation: option<string>,
+  format?: string,
+  representation?: string,
 }
 
 @module("date-fns/formatISO9075")
 external formatISO9075Opt: (Js.Date.t, formatISO9075Options) => string = "default"
 
 @module("date-fns/formatRFC3339") external formatRFC3339: Js.Date.t => string = "default"
-type formatRFC3339Options = {fractionDigits: option<int>}
+type formatRFC3339Options = {fractionDigits?: int}
 
 @module("date-fns/formatRFC3339")
 external formatRFC3339Options: (Js.Date.t, formatRFC3339Options) => string = "default"
@@ -87,8 +87,8 @@ external formatRFC3339Options: (Js.Date.t, formatRFC3339Options) => string = "de
 @module("date-fns/formatRelative")
 external formatRelative: (Js.Date.t, Js.Date.t) => string = "default"
 type formatRelativeOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
 }
 @module("date-fns/formatRelative")
 external formatRelativeOpt: (Js.Date.t, Js.Date.t, formatRelativeOptions) => string = "default"
@@ -106,30 +106,30 @@ external formatRelativeOpt: (Js.Date.t, Js.Date.t, formatRelativeOptions) => str
 @module("date-fns/parse") external parse: (string, string, Js.Date.t) => Js.Date.t = "default"
 
 type parseOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
-  firstWeekContainsDate: option<int>,
-  useAdditionalWeekYearTokens: option<bool>,
-  useAdditionalDayOfYearTokens: option<bool>,
+  locale?: locale,
+  weekStartsOn?: int,
+  firstWeekContainsDate?: int,
+  useAdditionalWeekYearTokens?: bool,
+  useAdditionalDayOfYearTokens?: bool,
 }
 
 @module("date-fns/parse")
 external parseOpt: (string, string, Js.Date.t, parseOptions) => Js.Date.t = "default"
 @module("date-fns/parseISO") external parseISO: string => Js.Date.t = "default"
-type parseISOOptions = {additionalDigits: option<int>}
+type parseISOOptions = {additionalDigits?: int}
 @module("date-fns/parseISO")
 external parseISOOpt: (string, parseISOOptions) => Js.Date.t = "default"
 @module("date-fns/parseJSON") external parseJSONString: string => Js.Date.t = "default"
 @module("date-fns/parseJSON") external parseJSONFloat: float => Js.Date.t = "default"
 @module("date-fns/parseJSON") external parseJSONInt: int => Js.Date.t = "default"
 type setOptions = {
-  year: option<int>,
-  month: option<int>,
-  date: option<int>,
-  hours: option<int>,
-  minutes: option<int>,
-  seconds: option<int>,
-  milliseconds: option<int>,
+  year?: int,
+  month?: int,
+  date?: int,
+  hours?: int,
+  minutes?: int,
+  seconds?: int,
+  milliseconds?: int,
 }
 @module("date-fns/set") external set: (Js.Date.t, setOptions) => Js.Date.t = "default"
 @module("date-fns/toDate") external toDateFloat: float => Js.Date.t = "default"
@@ -143,15 +143,15 @@ external areIntervalsOverlapping: (interval, interval) => bool = "default"
 @module("date-fns/eachDayOfInterval")
 external eachDayOfInterval: interval => array<Js.Date.t> = "default"
 
-type eachDayOfIntervalOptions = {step: option<int>}
+type eachDayOfIntervalOptions = {step?: int}
 @module("date-fns/eachDayOfInterval")
 external eachDayOfIntervalOpt: (interval, eachDayOfIntervalOptions) => array<Js.Date.t> = "default"
 
 @module("date-fns/eachWeekOfInterval")
 external eachWeekOfInterval: interval => array<Js.Date.t> = "default"
 type eachWeekOfIntervalOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
 }
 @module("date-fns/eachWeekOfInterval")
 external eachWeekOfIntervalOpt: (interval, eachWeekOfIntervalOptions) => array<Js.Date.t> =
@@ -227,7 +227,7 @@ external differenceInMinutesf: (Js.Date.t, Js.Date.t) => float = "default"
 
 @module("date-fns/roundToNearestMinutes")
 external roundToNearestMinutes: Js.Date.t => Js.Date.t = "default"
-type roundToNearestMinutesOptions = {nearestTo: option<int>}
+type roundToNearestMinutesOptions = {nearestTo?: int}
 
 @module("date-fns/roundToNearestMinutes")
 external roundToNearestMinutesOpt: (Js.Date.t, roundToNearestMinutesOptions) => Js.Date.t =
@@ -317,8 +317,8 @@ external subBusinessDaysf: (Js.Date.t, float) => Js.Date.t = "default"
 @module("date-fns/setDay") external setDay: (Js.Date.t, int) => Js.Date.t = "default"
 @module("date-fns/setDay") external setDayf: (Js.Date.t, float) => Js.Date.t = "default"
 type setDayOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
 }
 @module("date-fns/setDay")
 external setDayOpt: (Js.Date.t, int, setDayOptions) => Js.Date.t = "default"
@@ -329,8 +329,8 @@ external setDayOptf: (Js.Date.t, float, setDayOptions) => Js.Date.t = "default"
 
 // Week Helpers
 type weekOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
 }
 @module("date-fns/addWeeks") external addWeeks: (Js.Date.t, int) => Js.Date.t = "default"
 @module("date-fns/addWeeks") external addWeeksf: (Js.Date.t, float) => Js.Date.t = "default"
@@ -358,9 +358,9 @@ external endOfWeekOpt: (Js.Date.t, weekOptions) => Js.Date.t = "default"
 @module("date-fns/getWeek") external getWeek: Js.Date.t => int = "default"
 @module("date-fns/getWeek") external getWeekf: Js.Date.t => float = "default"
 type getWeekOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
-  firstWeekContainsDate: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
+  firstWeekContainsDate?: int,
 }
 @module("date-fns/getWeek") external getWeekOpt: (Js.Date.t, getWeekOptions) => int = "default"
 @module("date-fns/getWeek") external getWeekOptf: (Js.Date.t, getWeekOptions) => float = "default"
@@ -392,9 +392,9 @@ external isSameWeekOpt: (Js.Date.t, Js.Date.t, weekOptions) => bool = "default"
 @module("date-fns/setWeek") external setWeek: (Js.Date.t, int) => Js.Date.t = "default"
 @module("date-fns/setWeek") external setWeekf: (Js.Date.t, float) => Js.Date.t = "default"
 type setWeekOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
-  firstWeekContainsDate: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
+  firstWeekContainsDate?: int,
 }
 @module("date-fns/setWeek")
 external setWeekOpt: (Js.Date.t, int, setWeekOptions) => Js.Date.t = "default"
@@ -468,7 +468,7 @@ external differenceInQuartersf: (Js.Date.t, Js.Date.t) => float = "default"
 @module("date-fns/isSameQuarter") external isSameQuarter: (Js.Date.t, Js.Date.t) => bool = "default"
 @module("date-fns/isThisQuarter") external isThisQuarter: Js.Date.t => bool = "default"
 @module("date-fns/lastDayOfQuarter") external lastDayOfQuarter: Js.Date.t => Js.Date.t = "default"
-type lastDayOfQuarterOptions = {additionalDigits: option<int>}
+type lastDayOfQuarterOptions = {additionalDigits?: int}
 
 @module("date-fns/lastDayOfQuarter")
 external lastDayOfQuarterOpt: (Js.Date.t, lastDayOfQuarterOptions) => Js.Date.t = "default"
@@ -542,7 +542,7 @@ external subISOWeekYearsf: (Js.Date.t, float) => Js.Date.t = "default"
 
 // Decade Helpers
 @module("date-fns/endOfDecade") external endOfDecade: Js.Date.t => Js.Date.t = "default"
-type endOfDecadeOptions = {additionalDigits: option<int>}
+type endOfDecadeOptions = {additionalDigits?: int}
 @module("date-fns/endOfDecade")
 external endOfDecadeOpt: (Js.Date.t, endOfDecadeOptions) => Js.Date.t = "default"
 @module("date-fns/getDecade") external getDecade: Js.Date.t => int = "default"
@@ -552,9 +552,9 @@ external endOfDecadeOpt: (Js.Date.t, endOfDecadeOptions) => Js.Date.t = "default
 
 // Week-Numbering Year Helpers
 type weekYearOptions = {
-  locale: option<locale>,
-  weekStartsOn: option<int>,
-  firstWeekContainsDate: option<int>,
+  locale?: locale,
+  weekStartsOn?: int,
+  firstWeekContainsDate?: int,
 }
 @module("date-fns/getWeekYear") external getWeekYear: Js.Date.t => int = "default"
 @module("date-fns/getWeekYear")

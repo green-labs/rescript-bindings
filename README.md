@@ -4,15 +4,16 @@
 
 ## List
 
-- [@greenlabs/rescript-next](https://www.npmjs.com/package/@greenlabs/rescript-next)
-- [@greenlabs/rescript-nock](https://www.npmjs.com/package/@greenlabs/rescript-nock)
-- [@greenlabs/rescript-jest](https://www.npmjs.com/package/@greenlabs/rescript-jest)
-- [@greenlabs/rescript-react-hook-form](https://www.npmjs.com/package/@greenlabs/rescript-react-hook-form)
-- [@greenlabs/rescript-testing-library](https://www.npmjs.com/package/@greenlabs/rescript-testing-library)
-- [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode)
-- [@greenlabs/rescript-react-linkify](https://www.npmjs.com/package/@greenlabs/rescript-react-linkify)
 - [@greenlabs/rescript-date-fns](https://www.npmjs.com/package/@greenlabs/rescript-date-fns)
+- [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode)
 - [@greenlabs/rescript-hammerjs](https://www.npmjs.com/package/@greenlabs/rescript-hammerjs)
+- [@greenlabs/rescript-jest](https://www.npmjs.com/package/@greenlabs/rescript-jest)
+- [@greenlabs/rescript-nock](https://www.npmjs.com/package/@greenlabs/rescript-nock)
+- [@greenlabs/rescript-react-hook-form](https://www.npmjs.com/package/@greenlabs/rescript-react-hook-form)
+- [@greenlabs/rescript-next](https://www.npmjs.com/package/@greenlabs/rescript-next)
+- [@greenlabs/rescript-react-linkify](https://www.npmjs.com/package/@greenlabs/rescript-react-linkify)
+- [@greenlabs/rescript-testing-library](https://www.npmjs.com/package/@greenlabs/rescript-testing-library)
+- [@greenlabs/rescript-use-debounce](https://www.npmjs.com/package/@greenlabs/rescript-use-debounce)
 
 ## Development
 

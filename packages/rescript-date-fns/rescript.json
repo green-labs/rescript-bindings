@@ -9,9 +9,16 @@
     {
       "dir": "./src",
       "subdirs": false
+    },
+    {
+      "dir": "./test",
+      "type": "dev",
+      "subdirs": true
     }
   ],
-  "bsc-flags": ["-bs-no-version-header"],
+  "bsc-flags": [
+    "-bs-no-version-header"
+  ],
   "warnings": {
     "error": true
   }
