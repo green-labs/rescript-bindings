@@ -5,6 +5,7 @@
 ## 설치하기
 
 > ReScript 버전 호환 표
+
 | Compiler | res_daum_postcode |
 | -------- | ----------------- |
 | v11      | >= v0.2.0         |
