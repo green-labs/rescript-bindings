@@ -3,7 +3,7 @@ open! Expect
 
 describe("Jest", () => {
   describe("Test.each1", () => {
-    Test.each1(["hello", "world"])(.
+    (Test.each1(["hello", "world"], ...))(.
       "message: %s",
       str => {
         Js.log(str)
@@ -12,7 +12,7 @@ describe("Jest", () => {
   })
 
   describe("Test.each2", () => {
-    Test.each2([("hello", "world"), ("green", "labs")])(.
+    (Test.each2([("hello", "world"), ("green", "labs")], ...))(.
       "message: %s",
       (str1, str2) => {
         Js.log2(str1, str2)

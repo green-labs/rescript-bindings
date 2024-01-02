@@ -1270,10 +1270,10 @@
     node-addon-api "^3.2.1"
     node-gyp-build "^4.3.0"
 
-"@rescript/react@^0.10.3":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
-  integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
+"@rescript/react@^0.12.0-alpha.3":
+  version "0.12.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.12.0-alpha.3.tgz#45b94e5b1f24776e74c2dfb7da38ed2c02a4651d"
+  integrity sha512-/S1uj77RPDzuLg3Ofb8KKU3Vppqy97/vF6bBdBZ+saIO9bpHVlsmmJyJG8QXjGZKE+aMynrrR3Tj4+9+5OzLdw==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.42"
@@ -4701,15 +4701,15 @@ require-main-filename@^2.0.0:
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
 
-rescript-webapi@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/rescript-webapi/-/rescript-webapi-0.6.1.tgz#b7e578c743b08e09f259938a6e9300c238020591"
-  integrity sha512-I/eeHOcsUfWbCf6u15zd+rKxMz9awSjjdRa8eFtl2X+HjDNs0mJxoC4uFFK9dIazYcmY2VpuK5TTpOPXvdkhDw==
+rescript-webapi@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/rescript-webapi/-/rescript-webapi-0.9.0.tgz#6445380bff048a873c3350a95a4434ef0bfb61cf"
+  integrity sha512-Q6I0OqaboCT2Z9VMXYM6pjzYKJani8NEiD6e9TFzRqb2nPjO2I0p4FG/8ZkYRr2JZlgTF/VsMQGuQ7+buHAbDg==
 
-rescript@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.0.1.tgz#5b2da8a8bcfb994bed1eb24820bf10cfb9d8c440"
-  integrity sha512-XwO1GPDtoEU4H03xQE5bp0/qtSVR6YLaJRPxWKrfFgKc+LI36ODOCie7o9UJfgzQdoMYkkZyiTGZ4N9OQEaiUw==
+rescript@^11.0.0-rc.8:
+  version "11.0.0-rc.8"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.0.0-rc.8.tgz#60c94034731cb894e09feacf10f1adb20efc7fb1"
+  integrity sha512-KFeCeJ2tYtmSLD24o0WtWr7YLO22DflCWL31/L9Q8HGdHTLEhDNa+R0tnoyZ8B6wwm6bpNG8xosu1H4O+o7LGA==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
@@ -5327,6 +5327,11 @@ upath@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
   integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
+
+use-debounce@^9.0.3:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-9.0.4.tgz#51d25d856fbdfeb537553972ce3943b897f1ac85"
+  integrity sha512-6X8H/mikbrt0XE8e+JXRtZ8yYVvKkdYRfmIhWZYsP8rcNs9hk3APV8Ua2mFkKRLcJKVdnX2/Vwrmg2GWKUQEaQ==
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"

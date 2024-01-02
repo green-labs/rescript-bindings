@@ -140,7 +140,6 @@ module Make: (
       ~shouldValidate: bool=?,
       ~shouldDirty: bool=?,
       ~shouldTouch: bool=?,
-      unit,
     ) => unit
     let resetField: t => unit
     let setError: (t, Error.t) => unit
@@ -198,7 +197,6 @@ module Make: (
       ~shouldValidate: bool=?,
       ~shouldDirty: bool=?,
       ~shouldTouch: bool=?,
-      unit,
     ) => unit
     let resetField: t => unit
     let setError: (t, Error.t) => unit

@@ -1,7 +1,7 @@
 type t
-type addressType = [#R | #J] // #R 도로명 | #J 지번
-type selected = [#Y | #N] // 선택 상태
-type lang = [#K | #E] // #K 한글주소 | #E 영문주소
+type addressType = R | J // R 도로명 | J 지번
+type selected = Y | N // 선택 상태
+type lang = K | E // K 한글주소 | E 영문주소
 
 type oncompleteResponse = {
   address: string,
@@ -48,52 +48,59 @@ type onresizeResponse = {
   width: float,
   height: float,
 }
-type oncloseResponse = [#FORCE_CLOSE | #COMPLETE_CLOSE]
+type oncloseResponse = FORCE_CLOSE | COMPLETE_CLOSE
 type onsearchResponse = {q: string, count: int}
 
-type option
-@obj
-external makeOption: (
-  ~oncomplete: oncompleteResponse => unit=?,
-  ~onresize: onresizeResponse => unit=?,
-  ~onclose: oncloseResponse => unit=?,
-  ~onsearch: onsearchResponse => unit=?,
-  ~width: float=?,
-  ~height: float=?,
-  ~animation: bool=?,
-  ~focusInput: bool=?,
-  ~autoMapping: bool=?,
-  ~shorthand: bool=?,
-  ~pleaseReadGuide: int=?,
-  ~pleaseReadGuideTimer: float=?,
-  ~maxSuggestItems: int=?,
-  ~showMoreHName: bool=?,
-  ~hideMapBtn: bool=?,
-  ~hideEngBtn: bool=?,
-  ~alwaysShowEngAddr: bool=?,
-  ~useBannerLink: bool=?,
-  ~theme: {..}=?,
-  ~submitMode: bool=?,
-  unit,
-) => option = ""
+type themeObj = {
+  bgColor?: string, // 바탕 배경색
+  searchBgColor?: string, // 검색창 배경색
+  contentBgColor?: string, // 본문 배경색(검색결과,결과없음,첫화면,검색서제스트)
+  pageBgColor?: string, // 페이지 배경색
+  textColor?: string, // 기본 글자색
+  queryTextColor?: string, // 검색창 글자색
+  postcodeTextColor?: string, // 우편번호 글자색
+  emphTextColor?: string, // 강조 글자색
+  outlineColor?: string, // 테두리
+}
 
-@new @scope("daum") external make: option => t = "Postcode"
+type params = {
+  oncomplete?: oncompleteResponse => unit,
+  onresize?: onresizeResponse => unit,
+  onclose?: oncloseResponse => unit,
+  onsearch?: onsearchResponse => unit,
+  width?: float,
+  height?: float,
+  animation?: bool,
+  focusInput?: bool,
+  autoMapping?: bool,
+  shorthand?: bool,
+  pleaseReadGuide?: int,
+  pleaseReadGuideTimer?: float,
+  maxSuggestItems?: int,
+  showMoreHName?: bool,
+  hideMapBtn?: bool,
+  hideEngBtn?: bool,
+  alwaysShowEngAddr?: bool,
+  useBannerLink?: bool,
+  theme?: themeObj,
+  submitMode?: bool,
+}
 
-type openOption
-@obj
-external makeOpenOption: (
-  ~q: string=?,
-  ~left: float=?,
-  ~top: float=?,
-  ~popupName: string=?,
-  ~autoClose: bool=?,
-  unit,
-) => openOption = ""
+@new @scope("daum") external make: params => t = "Postcode"
 
-@send external openPostCode: (t, openOption) => unit = "open"
+type openParams = {
+  q?: string,
+  left?: float,
+  top?: float,
+  popupName?: string,
+  autoClose?: bool,
+}
 
-type embedOption
-@obj
-external makeEmbedOption: (~q: string=?, ~autoClose: bool=?) => embedOption = ""
+@send external openPostCode: (t, openParams) => unit = "open"
 
-@send external embedPostCode: (t, Dom.element, embedOption) => unit = "embed"
+type embedParams = {
+  q?: string,
+  autoClose?: bool,
+}
+
+@send external embedPostCode: (t, Dom.element, embedParams) => unit = "embed"
