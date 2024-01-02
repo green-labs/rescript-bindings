@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-jest",
-  "version": "1.0.1",
+  "version": "28.1.0",
   "description": "ReScript bindings for Jest",
   "keywords": [
     "rescript",
@@ -25,6 +25,9 @@
     "url": "https://github.com/green-labs/rescript-bindings/issues"
   },
   "peerDependencies": {
+    "jest": "^28.1.3"
+  },
+  "devDependencies": {
     "jest": "^28.1.3"
   }
 }

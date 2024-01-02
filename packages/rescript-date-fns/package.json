@@ -24,7 +24,10 @@
     "url": "git@github.com:green-labs/rescript-bindings/rescript-date-fns.git",
     "directory": "packages/rescript-date-fns"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "date-fns": "2.30.0"
+  },
+  "devDependencies": {
     "date-fns": "2.30.0"
   }
 }
