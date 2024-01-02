@@ -1,4 +1,3 @@
-@deriving({jsConverter: newType})
 type direction =
   | @as(1) DIRECTION_NONE
   | @as(2) DIRECTION_LEFT
@@ -41,7 +40,6 @@ type events = [
   | #tap
 ]
 
-@deriving({jsConverter: newType})
 type inputEvents =
   | @as(1) INPUT_START
   | @as(2) INPUT_MOVE
@@ -68,15 +66,15 @@ module Instance = {
     velocityX: float,
     velocityY: float,
     velocity: float,
-    direction: abs_direction,
-    offsetDirection: abs_direction,
+    direction: direction,
+    offsetDirection: direction,
     scale: float,
     rotation: float,
     center: position,
     srcEvent: Dom.event,
     target: Dom.element,
     pointerType: pointer,
-    eventType: abs_inputEvents,
+    eventType: inputEvents,
     isFirst: bool,
     isFinal: bool,
     pointers: array<pointer>,

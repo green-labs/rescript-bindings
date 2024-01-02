@@ -3,7 +3,7 @@
   "dependencies": {
     "@changesets/cli": "^2.24.4",
     "lerna": "^5.5.0",
-    "rescript": "11.0.0-rc.8"
+    "rescript": "^11.0.0-rc.8"
   },
   "private": true,
   "workspaces": [

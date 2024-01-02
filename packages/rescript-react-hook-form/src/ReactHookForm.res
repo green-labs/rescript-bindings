@@ -202,8 +202,8 @@ module Make = (
     let getValue = (form: t) => form->_getValues(T.name)
 
     @send
-    external _setValue: (t, string, T.t, ~option: 'a=?, unit) => unit = "setValue"
-    let setValue = (form, value) => form->_setValue(T.name, value, ())
+    external _setValue: (t, string, T.t, ~option: 'a=?) => unit = "setValue"
+    let setValue = (form, value) => form->_setValue(T.name, value)
     let setValueWithOption = (
       form,
       value,
