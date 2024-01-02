@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-use-debounce",
   "description": "ReScript bindings for rescript-use-debounce",
-  "version": "0.0.1",
+  "version": "9.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
@@ -21,9 +21,10 @@
     "url": "https://github.com/green-labs/rescript-bindings.git",
     "directory": "packages/rescript-use-debounce"
   },
-  "dependencies": {
+  "devDependencies": {
     "use-debounce": "^9.0.3"
   },
-  "devDependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {
+    "use-debounce": "^9.0.3"
+  }
 }

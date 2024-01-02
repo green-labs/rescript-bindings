@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/rescript-react-linkify",
   "description": "ReScript bindings for React Linkify",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "scripts": {
@@ -21,13 +21,12 @@
     "url": "https://github.com/green-labs/rescript-bindings.git",
     "directory": "packages/rescript-react-linkify"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@rescript/react": "^0.12.0-alpha.3",
     "react-linkify": "^1.0.0-alpha"
   },
-  "devDependencies": {
-    "@rescript/react": "^0.12.0-alpha.3"
-  },
   "peerDependencies": {
-    "@rescript/react": "^0.12.0-alpha.3"
+    "@rescript/react": "^0.12.0-alpha.3",
+    "react-linkify": "^1.0.0-alpha"
   }
 }
