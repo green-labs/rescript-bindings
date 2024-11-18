@@ -1,5 +1,11 @@
 # @greenlabs/rescript-daum-postcode
 
+## 0.2.1
+
+### Patch Changes
+
+- 0721f8e: support rescript v12
+
 ## 0.2.0
 
 ### Minor Changes
