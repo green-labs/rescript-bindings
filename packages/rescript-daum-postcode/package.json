@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-daum-postcode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ReScript binding to Daum Postcode",
   "scripts": {
     "start": "rescript build -w",
