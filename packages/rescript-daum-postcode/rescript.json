@@ -1,8 +1,6 @@
 {
   "name": "@greenlabs/rescript-daum-postcode",
-  "bsc-flags": [
-    "-bs-super-errors"
-  ],
+  "bsc-flags": [],
   "sources": [
     {
       "dir": "src"
@@ -15,6 +13,5 @@
     }
   ],
   "suffix": ".bs.js",
-  "refmt": 3,
   "bs-dev-dependencies": []
 }
