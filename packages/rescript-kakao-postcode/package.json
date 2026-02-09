@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-kakao-postcode",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ReScript binding to Kakao Postcode",
   "scripts": {
     "start": "rescript watch",
