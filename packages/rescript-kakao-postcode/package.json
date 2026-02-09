@@ -1,0 +1,29 @@
+{
+  "name": "@greenlabs/rescript-kakao-postcode",
+  "version": "0.1.0",
+  "description": "ReScript binding to Kakao Postcode",
+  "scripts": {
+    "start": "rescript watch",
+    "build": "rescript",
+    "clean": "rescript clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/green-labs/rescript-bindings.git",
+    "directory": "packages/rescript-kakao-postcode"
+  },
+  "keywords": [
+    "ReScript",
+    "Kakao Postcode"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "license": "MIT",
+  "bugs": "https://github.com/green-labs/rescript-bindings/issues",
+  "homepage": "https://github.com/green-labs/rescript-bindings/tree/main/packages/rescript-kakao-postcode",
+  "devDependencies": {
+    "rescript": "^12.0.0"
+  }
+}
