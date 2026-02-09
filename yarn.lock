@@ -1811,10 +1811,40 @@
     node-addon-api "^3.2.1"
     node-gyp-build "^4.3.0"
 
+"@rescript/darwin-arm64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/darwin-arm64/-/darwin-arm64-12.1.0.tgz#19b75d31e97386dabfe382a6c98653314812afe3"
+  integrity sha512-OuJMT+2h2Lp60n8ONFx1oBAAePSVkM9zl7E/EX4VD2xkQoVTPklz0BpHYOICnFJSCOOdbOhbsTBXdLpo3yvllg==
+
+"@rescript/darwin-x64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/darwin-x64/-/darwin-x64-12.1.0.tgz#5af8767bce73e6a4b22aa96262566ddecf338795"
+  integrity sha512-r5Iv4ga+LaNq+6g9LODwZG4bwydd9UDXACP/HKxOfrP9XQCITlF/XqB1ZDJWyJOgJLZSJCd7erlG38YtB0VZKA==
+
+"@rescript/linux-arm64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/linux-arm64/-/linux-arm64-12.1.0.tgz#3f99d6ff8fd8aa002db22fb38346ce03873090a1"
+  integrity sha512-UTZv4GTjbyQ/T5LQDfQiGcumK3SzE1K7+ug6gWpDcGZ7ALc7hCS6BVEFL/LDs8iWVwAwkK/6r456s2zRnvS7wQ==
+
+"@rescript/linux-x64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/linux-x64/-/linux-x64-12.1.0.tgz#e8cd45418a7eebfe643ae826e0e19b13a1ad1e51"
+  integrity sha512-c0PXuBL09JRSA4nQusYbR4mW5QJrBPqxDrqvIX+M79fk3d6jQmj5x4NsBwk5BavxvmbR/JU1JjYBlSAa3h22Vg==
+
 "@rescript/react@^0.12.0-alpha.3":
   version "0.12.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.12.0-alpha.3.tgz#45b94e5b1f24776e74c2dfb7da38ed2c02a4651d"
   integrity sha512-/S1uj77RPDzuLg3Ofb8KKU3Vppqy97/vF6bBdBZ+saIO9bpHVlsmmJyJG8QXjGZKE+aMynrrR3Tj4+9+5OzLdw==
+
+"@rescript/runtime@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/runtime/-/runtime-12.1.0.tgz#331ad481c05efdd86b83c3ced6d182d7f30be845"
+  integrity sha512-bvr9RfvBD+JS/6foWCA4l2fLXmUXN0KGqylXQPHt09QxUghqgoCiaWVHaHSx5dOIk/jAPlGQ7zB5yVeMas/EFQ==
+
+"@rescript/win32-x64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@rescript/win32-x64/-/win32-x64-12.1.0.tgz#8ba1b79aea58a6e46ce286f3fd1c280859bb45c2"
+  integrity sha512-nQC42QByyAbryfkbyK67iskipUqXVwTPCFrqissY4jJoP0128gg0yG6DydJnV1stXphtFdMFHtmyYE1ffG7UBg==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.42"
@@ -6033,6 +6063,19 @@ rescript@^11.0.0-rc.8:
   version "11.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.0.0-rc.8.tgz#60c94034731cb894e09feacf10f1adb20efc7fb1"
   integrity sha512-KFeCeJ2tYtmSLD24o0WtWr7YLO22DflCWL31/L9Q8HGdHTLEhDNa+R0tnoyZ8B6wwm6bpNG8xosu1H4O+o7LGA==
+
+rescript@^12.0.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-12.1.0.tgz#29754fa801fa8f79a94b0fe4783ff963391be4f1"
+  integrity sha512-n/B43wzIEKV4OmlrWbrlQOL4zZaz0RM/Cc8PG2YvhQvQDW7nscHJliDq1AGeVwHoMX68MeaKKzLDOMOMU9Z6FA==
+  dependencies:
+    "@rescript/runtime" "12.1.0"
+  optionalDependencies:
+    "@rescript/darwin-arm64" "12.1.0"
+    "@rescript/darwin-x64" "12.1.0"
+    "@rescript/linux-arm64" "12.1.0"
+    "@rescript/linux-x64" "12.1.0"
+    "@rescript/win32-x64" "12.1.0"
 
 resolve-cwd@^3.0.0:
   version "3.0.0"

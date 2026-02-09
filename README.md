@@ -5,7 +5,8 @@
 ## List
 
 - [@greenlabs/rescript-date-fns](https://www.npmjs.com/package/@greenlabs/rescript-date-fns)
-- [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode)
+- [@greenlabs/rescript-daum-postcode](https://www.npmjs.com/package/@greenlabs/rescript-daum-postcode) (deprecated)
+- [@greenlabs/rescript-kakao-postcode](https://www.npmjs.com/package/@greenlabs/rescript-kakao-postcode)
 - [@greenlabs/rescript-hammerjs](https://www.npmjs.com/package/@greenlabs/rescript-hammerjs)
 - [@greenlabs/rescript-jest](https://www.npmjs.com/package/@greenlabs/rescript-jest)
 - [@greenlabs/rescript-nock](https://www.npmjs.com/package/@greenlabs/rescript-nock)

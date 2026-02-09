@@ -1,0 +1,17 @@
+{
+  "name": "@greenlabs/rescript-kakao-postcode",
+  "compiler-flags": [],
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "dev-dependencies": []
+}
